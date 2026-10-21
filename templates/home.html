@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block bodyclass %}home{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy">
+    <h1>从零开始，<br>用 Procreate 修好一张 cos 片</h1>
+    <p class="lead">{{ modules|length }} 个模块、{{ total_lessons }} 节课，大约 {{ total_hours }} 小时。每节课都有讲解、找图要求和作业，照着做就能一步步学会。</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ lu('m0-01') }}" data-continue>从第一课开始</a>
+      <a class="btn" href="{{ u('/problems/') }}">我遇到问题了</a>
+    </div>
+    <p class="continue-note" data-continue-note hidden></p>
+  </div>
+  <figure class="compare hero-demo" data-compare>
+    <div class="compare-stage">
+      <img class="compare-before" src="{{ asset('diagrams/ratio-before.svg') }}" alt="修之前：俯拍，约 6.4 头身">
+      <img class="compare-after" src="{{ asset('diagrams/ratio-after.svg') }}" alt="修之后：约 7.0 头身">
+      <div class="compare-handle" aria-hidden="true"></div>
+    </div>
+    <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="拖动对比修图前后">
+    <figcaption><span>拖一下，看比例修正前后的区别</span><a class="hero-demo-link" href="{{ lu('m5-04') }}">去 5.4 课学这一招</a></figcaption>
+  </figure>
+</section>
+
+<aside class="notice" data-backup-notice hidden>
+  <p><b>该备份学习进度了。</b>你已经学完 <span data-done-count></span> 节课，进度只存在这台设备的浏览器里。</p>
+  <div class="notice-actions"><a class="btn btn-small" href="{{ u('/about/#backup') }}">去导出备份</a><button class="btn btn-small btn-ghost" type="button" data-backup-dismiss>两周后再提醒</button></div>
+</aside>
+
+<section class="quest" aria-labelledby="quest-title">
+  <div class="section-head">
+    <h2 id="quest-title">通关地图</h2>
+    <p>按顺序学。M3 讲理论，可以和 M4、M5 一起学。</p>
+  </div>
+  <ol class="quest-path">
+    {% for m in modules %}
+    <li class="quest-stop lv-{{ {'入门':'a','基础':'b','进阶':'c','高阶':'d'}[m.level] }}">
+      <a class="quest-card" href="{{ u('/' ~ m.id ~ '/') }}" data-module="{{ m.id }}" data-lessons="{{ m.lessons|map(attribute='id')|join(',') }}">
+        <span class="quest-no">M{{ m.no }}</span>
+        <span class="quest-title">{{ m.title }}</span>
+        <span class="quest-meta">{{ m.lessons|length }} 课，约 {{ m.hours }} 小时</span>
+        <span class="quest-bar" aria-hidden="true"><i style="width:0"></i></span>
+        <span class="quest-count" data-count>还没开始</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="home-problems" aria-labelledby="hp-title">
+  <div class="section-head">
+    <h2 id="hp-title">修图卡住了？先查这里</h2>
+    <p>每个问题都写了原因、修法，以及要回去补哪节课。</p>
+  </div>
+  <ul class="sticker-wall">
+    {% for p in problems %}
+    <li><a class="sticker{% if p.body_md %} has-page{% endif %}" href="{{ u('/problems/' ~ p.slug ~ '/') if p.body_md else u('/problems/#' ~ p.slug) }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="how" aria-labelledby="how-title">
+  <div class="section-head"><h2 id="how-title">怎么用这个网站</h2></div>
+  <div class="how-grid">
+    <div class="how-item">
+      <h3>一课一练</h3>
+      <p>每节课最后有作业和验收标准。达到验收标准再学下一课，比一口气看完有用得多。</p>
+    </div>
+    <div class="how-item">
+      <h3>练习图自己找</h3>
+      <p>每个作业写明了需要什么样的照片。提前按<a href="{{ u('/about/#photos') }}">找图清单</a>攒一些，做作业时就不用临时找。</p>
+    </div>
+    <div class="how-item">
+      <h3>进度存在本机</h3>
+      <p>不用注册。完成的课和作业记在这台设备的浏览器里。在 iPad 上建议<a href="{{ u('/about/#home-screen') }}">添加到主屏幕</a>再用，并定期导出备份。</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

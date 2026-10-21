@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>资料库</h1>
+  <p class="lead">课程里引用的全部视频、文章和手册，共 {{ res_list|length }} 条。只收官方或作者本人发布的内容，不收转卖课程的网站。</p>
+</div>
+<p class="res-note">很多推荐的教程是用 Photoshop 讲的，看到 PS 的功能名找不到时，查 <a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>。</p>
+<div class="filters" data-filters>
+  <fieldset><legend>类型</legend>
+    <button class="fchip is-on" type="button" data-f="type" data-v="">全部</button>
+    {% for t in types %}<button class="fchip" type="button" data-f="type" data-v="{{ t }}">{{ t }}</button>{% endfor %}
+  </fieldset>
+  <fieldset><legend>平台</legend>
+    <button class="fchip is-on" type="button" data-f="platform" data-v="">全部</button>
+    {% for p in platforms %}<button class="fchip" type="button" data-f="platform" data-v="{{ p }}">{{ p }}</button>{% endfor %}
+  </fieldset>
+  <fieldset><legend>费用</legend>
+    <button class="fchip is-on" type="button" data-f="paid" data-v="">全部</button>
+    <button class="fchip" type="button" data-f="paid" data-v="free">免费</button>
+    <button class="fchip" type="button" data-f="paid" data-v="paid">付费</button>
+  </fieldset>
+  <p class="filter-count" aria-live="polite" data-filter-count></p>
+</div>
+<ul class="res-grid">
+  {% for r in res_list %}
+  <li class="res-card" id="{{ r.id }}" data-type="{{ r.type }}" data-platform="{{ r.pgroup }}" data-paid="{{ 'paid' if r.paid else 'free' }}">
+    <h2><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a></h2>
+    <p class="res-tags"><span class="pill">{{ r.platform }}</span><span class="pill">{{ r.type }}</span>{% if r.paid %}<span class="pill pill-paid">付费</span>{% endif %}{% if r.lang == 'en' %}<span class="pill">英文</span>{% endif %}</p>
+    {% if r.why %}<p>{{ r.why }}</p>{% endif %}
+    {% if r.used_in %}<p class="res-used">用在：{% for l in r.used_in %}<a href="{{ lu(l.id) }}">{{ l.no }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

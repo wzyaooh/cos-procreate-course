@@ -1,0 +1,198 @@
+- id: m7-hb-perspective
+  title: Procreate 使用手册：透视指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guides-perspective
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 怎么添加透视点、拖动视平线。合成时用它在背景里找视平线。
+  lessons: [m7-01, m7-02, m7-03]
+- id: m7-hb-blur
+  title: Procreate 使用手册：模糊（高斯模糊、动态模糊、透视模糊）
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-blur
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 高斯模糊的滑动手势和「应用」按钮在哪里。
+  lessons: [m7-02]
+- id: m7-hb-noise
+  title: Procreate 使用手册：杂色
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-noise
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 云、巨浪、背脊三种模式，比例、倍频、湍流三个滑块，以及通道里的单一、多个、叠加。
+  lessons: [m7-02]
+- id: m7-hb-color-adjust
+  title: Procreate 使用手册：色彩调整（色相饱和度亮度、颜色平衡、曲线、渐变映射）
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 渐变映射的预设名称、怎么新建和编辑色点。
+  lessons: [m7-02, m7-04]
+- id: m7-hb-layer-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 剪辑蒙版、阿尔法锁定、填充图层、向下合并的官方说明。
+  lessons: [m7-02, m7-03]
+- id: m7-hb-copypaste
+  title: Procreate 使用手册：拷贝并粘贴菜单
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/copypaste
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 三指下拖的六个选项，「全部拷贝」会把所有可见图层合成一张。
+  lessons: [m7-01, m7-02]
+- id: m7-hb-add
+  title: Procreate 使用手册：添加（插入文件、插入照片）
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-add
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 把背景图、素材图插入到当前画布的官方方法。
+  lessons: [m7-01, m7-04]
+- id: m7-procreate-remove-bg
+  title: Crop and Remove Background（Procreate 帮助中心）
+  url: https://help.procreate.com/cn/articles/JCLHGT-crop-and-remove-background
+  platform: Procreate 官方
+  type: 文章
+  paid: false
+  lang: en
+  why: 官方说明 Procreate 没有一键去背景，介绍了蒙版法和用 iPad「照片」App 提取主体再拖进 Procreate 的办法。
+  lessons: [m7-01]
+- id: unsplash-license
+  title: Unsplash License（Unsplash 授权条款）
+  url: https://unsplash.com/license
+  platform: Unsplash
+  type: 文章
+  paid: false
+  lang: en
+  why: 找免版权背景前先看：能免费用、能修改，但不能原样出售，也不包含照片里商标和人物的授权。
+  lessons: [m7-01, m7-04]
+- id: pexels-license
+  title: Pexels License（Pexels 授权条款）
+  url: https://www.pexels.com/license/
+  platform: Pexels
+  type: 文章
+  paid: false
+  lang: en
+  why: 另一个常用免费图库的条款，允许和禁止的用法列得很清楚。
+  lessons: [m7-01, m7-04]
+- id: uisdc-composite-light
+  title: 超赞教程！教你图像合成时帅气的运用光线与阴影
+  url: https://www.uisdc.com/manipulation-secrets-shading-and-lighting
+  platform: 优设网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲怎么从背景里找光源方向、画软阴影和投影、加轮廓光，图例多。用的是 PS，思路可以照搬到 Procreate。
+  lessons: [m7-02]
+- id: zcool-composite-light
+  title: 合成技巧之光线和阴影
+  url: https://www.zcool.com.cn/article/ZNjc3ODQ=.html
+  platform: 站酷
+  type: 文章
+  paid: false
+  lang: zh
+  why: 中文的合成光影入门，和优设那篇可以对照着看。
+  lessons: [m7-02]
+- id: netease-composite-light
+  title: PS光影教程：详解照片合成的光影技巧
+  url: https://www.163.com/dy/article/DP19N1VE0516BGRH.html
+  platform: 网易
+  type: 文章
+  paid: false
+  lang: zh
+  why: 接触阴影、投影分层画的思路，讲了脚和地面交接处为什么要最暗。
+  lessons: [m7-02]
+- id: tutvid-perspective
+  title: Getting Perspective Right for Incredible Photoshop Composite Images
+  url: https://tutvid.com/photoshop/getting-perspective-right-for-incredible-photoshop-composite-images/
+  platform: tutvid
+  type: 文章
+  paid: false
+  lang: en
+  why: 怎么在背景里找视平线、按视平线摆放和缩放合成进来的人物。
+  lessons: [m7-01, m7-02]
+- id: retut-compositing
+  title: 'Photoshop Compositing : The Complete Guide'
+  url: https://retutstudio.com/photoshop-compositing-guide/
+  platform: Retut Studio
+  type: 文章
+  paid: false
+  lang: en
+  why: 合成的完整原理长文：透视、光、色、景深分章节讲。
+  lessons: [m7-02, m7-04]
+- id: phlearn-perfect-composite
+  title: 'Perfect Composite in Photoshop: Master Perspective in 4 Steps'
+  url: https://phlearn.com/tutorial/perfect-composite/
+  platform: PHLEARN
+  type: 视频
+  paid: false
+  lang: en
+  why: 透视、颜色、光线逐项对齐的示范。
+  lessons: [m7-02]
+- id: erin-quick-composite
+  title: Photoshop Composite Tutorial, Replace Background Fast
+  url: https://www.erinoconnorphoto.com/news/quick-photoshop-composite
+  platform: Erin O'Connor Photography
+  type: 文章
+  paid: false
+  lang: en
+  why: 摄影师写的换背景流程，强调先选好背景再拍人，让光向、机位一开始就对上。
+  lessons: [m7-01, m7-04]
+- id: pixelmonkey-light-matching
+  title: 'The Light Matching Problem: Why Your Composites Look Fake (And How to Fix It)'
+  url: https://pixel-monkey.com/posts/the-light-matching-problem-why-your-composites-look-fake-and-how-to-fix-it/
+  platform: Pixel Monkey
+  type: 文章
+  paid: false
+  lang: en
+  why: 专讲光的匹配：方向、软硬、暗部颜色。
+  lessons: [m7-02]
+- id: affinity-composite-shadows
+  title: How to create realistic shadows in photo composites
+  url: https://www.affinity.studio/blog/how-to-create-realistic-shadows-in-photo-composites
+  platform: Affinity
+  type: 文章
+  paid: false
+  lang: en
+  why: 接触阴影、投影、边缘光的做法，软件是 Affinity，步骤和 Procreate 很接近。
+  lessons: [m7-02]
+- id: bili-convention-composite
+  title: 【Cos后期】漫展合成场照超简单全流程修图教程来辣！
+  url: https://www.bilibili.com/video/BV1XQ4y1H7Ra/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 漫展场照换背景的全流程，有后续两期讲溶图和画光。
+  lessons: [m7-03]
+- id: bili-convention-post
+  title: 【cos后期】场照后期怎么修？保姆级漫展场照后期教程
+  url: https://www.bilibili.com/video/BV1744y1F7G1/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 场照从清理杂物到加氛围的完整过程。
+  lessons: [m7-03]
+- id: bili-fx-convention
+  title: 【Cos后期】万用又出片的特效场照思路
+  url: https://www.bilibili.com/video/BV1GQkQYEEHk/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 场照加特效和氛围的思路，可以用在 7.3 最后一步。
+  lessons: [m7-03, m7-04]

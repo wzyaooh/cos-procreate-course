@@ -1,0 +1,44 @@
+# 张宇涵的cos后期Procreate 自学站
+# 两种模式，由 .env 里的 CADDY_SITE 决定：
+#   CADDY_SITE=:80                 （默认）前面有 nginx / 1Panel OpenResty 反代，这里只提供 HTTP，证书由 nginx 管
+#   CADDY_SITE=你的域名            Caddy 直接对外，自己申请并续期 HTTPS 证书（docker-compose 里的端口也要改，见 README）
+{
+	http_port {$HTTP_PORT:80}
+	https_port {$HTTPS_PORT:443}
+}
+
+{$CADDY_SITE} {
+	root * {$SITE_ROOT:/srv}
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	# 样式、脚本、图片的地址带版本号，可以长缓存；网页本身每次都检查更新
+	@static path /static/*
+	header @static Cache-Control "public, max-age=2592000, immutable"
+	@pages not path /static/*
+	header @pages Cache-Control "no-cache"
+
+	@manifest path /manifest.webmanifest
+	header @manifest Content-Type "application/manifest+json; charset=utf-8"
+
+	file_server
+
+	handle_errors 404 {
+		rewrite * /404.html
+		file_server
+	}
+}
+
+# 容器内部健康检查用，只监听容器自己的 127.0.0.1，不对外开放
+http://127.0.0.1:{$HEALTH_PORT:8081} {
+	bind 127.0.0.1
+	root * {$SITE_ROOT:/srv}
+	file_server
+}

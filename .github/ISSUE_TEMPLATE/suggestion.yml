@@ -1,0 +1,24 @@
+name: 建议
+description: 想加的课、问题速查、资料，或者网站功能
+title: "[建议] "
+labels: ["建议"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 建议类型
+      options:
+        - 新的问题速查
+        - 新的课程或案例
+        - 推荐一条学习资料
+        - 网站功能
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体内容
+      description: 推荐资料请附链接，并说明是作者本人或官方发布的
+    validations:
+      required: true

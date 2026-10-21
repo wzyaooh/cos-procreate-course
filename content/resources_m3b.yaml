@@ -1,0 +1,144 @@
+# M3 视觉基础理论 3.5～3.7 新增资料（骨点、透视、构图）
+- id: m3b-bili-body-points
+  title: 【干货】教你如何画人体！人体结构、动态怎么画？
+  url: https://www.bilibili.com/read/cv8046029/
+  platform: B站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 图文专栏。讲"四大点八小点"（肩点、胯点、手肘、手腕、膝盖、脚踝）和"一竖二横三体积"，和本课的骨点、体块对得上。
+  lessons:
+  - m3-05
+- id: m3b-bili-block-practice
+  title: 萌新必看的体块练习！这样跟着练你还怕画不出人体？
+  url: https://www.bilibili.com/video/BV11L41157Mg/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 零基础的体块概括练习。看懂怎么把人体简化成几个盒子，修图时就知道哪块该整体动。
+  lessons:
+  - m3-05
+- id: m3b-bili-three-blocks
+  title: 还在纠结人体比例？三大体块让你一眼看出真相！
+  url: https://www.bilibili.com/video/BV1xmwkeZEYe/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 专讲头、胸腔、骨盆三大体块的比例和朝向，对应本课"局部对、整体丑"里体块关系那一条。
+  lessons:
+  - m3-05
+- id: m3b-hb-quickshape
+  title: Procreate 使用手册：速创形状
+  url: https://help.procreate.com/cn/procreate/handbook/guides/quickshape
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 画完停住变直线、四边形、椭圆，以及「编辑形状」的用法。标骨点、画体块线和透视线都用它。
+  lessons:
+  - m3-05
+  - m3-06
+  - m3-07
+- id: m3b-hb-layer-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 重命名图层、开关辅助绘图都在图层选项菜单里。
+  lessons:
+  - m3-05
+- id: m3b-hb-perspective
+  title: Procreate 使用手册：透视指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guides-perspective
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 怎么新增、拖动、删除透视点，一点、两点、三点透视在指引里分别是什么样。
+  lessons:
+  - m3-06
+- id: m3b-hb-guides
+  title: Procreate 使用手册：创建绘图指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guide-create
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 绘图指引界面各个按钮（取消、完成、颜色、不透明度、粗细度、网格大小、辅助绘图）的说明。
+  lessons:
+  - m3-06
+  - m3-07
+- id: m3b-hb-gallery-organize
+  title: Procreate 使用手册：整理作品
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 在图库里向左轻滑作品，复制出一份副本；做二次构图时每种裁法用一份。
+  lessons:
+  - m3-07
+- id: m3b-thepaper-face
+  title: 尖脸 or 饼脸，相机拍下的哪一个才是真的你？
+  url: https://m.thepaper.cn/newsDetail_forward_20951065
+  platform: 澎湃新闻
+  type: 文章
+  paid: false
+  lang: zh
+  why: 用图解释同一张脸在不同拍摄距离下为什么会变尖或变宽，和本课"透视畸变只看距离"的结论一致。
+  lessons:
+  - m3-06
+- id: m3b-adobe-lrm-lens
+  title: Correct lens distortion in Lightroom on mobile
+  url: https://helpx.adobe.com/lightroom/mobile/adjust-light-and-color/correct-lens-distortions.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: en
+  why: 英文。Lightroom 手机版「光学」里「启用镜头校正」的官方说明，什么时候能自动识别镜头、什么时候要手动选配置文件。
+  lessons:
+  - m3-06
+- id: m3b-wiki-distortion
+  title: Distortion (optics)
+  url: https://en.wikipedia.org/wiki/Distortion_(optics)
+  platform: 维基百科
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。桶形、枕形畸变的定义和示意图，想弄清"镜头畸变"和"透视畸变"的区别可以看这里。
+  lessons:
+  - m3-06
+- id: m3b-pixpretty-composition
+  title: 摄影构图教程：三分法 / 对称 / 引导线 / 框架 / 留白，五种经典法则从入门到精通
+  url: https://www.pixpretty.com/photography-tips/skills.html
+  platform: 像素蛋糕官网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 图文讲五种常用构图，带速查表。前期拍摄和后期裁切都能用。
+  lessons:
+  - m3-07
+- id: m3b-slr-cropping
+  title: Portrait Cropping Guide - Bad Portrait Crops & How to Fix Them
+  url: https://www.slrlounge.com/portrait-cropping-guide-bad-portrait-crops-how-to-fix-them/
+  platform: SLR Lounge
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。用大量人像对比说明哪里不该切（关节、下巴、手脚）、哪里可以切，看图就能懂。
+  lessons:
+  - m3-07
+- id: m3b-dps-crop
+  title: Portrait Crop - The Ultimate Guide to Cropping Portraits Like a Pro
+  url: https://digital-photography-school.com/good-crop-bad-crop-how-to-crop-portraits/
+  platform: Digital Photography School
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。好裁切和坏裁切的对比，另外讲了视线方向留空和眼睛放在画面上部的做法。
+  lessons:
+  - m3-07

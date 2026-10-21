@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block desc %}{{ p.title }}：{{ p.symptom }}{% endblock %}
+{% block content %}
+<nav class="crumbs" aria-label="位置"><a href="{{ u('/problems/') }}">问题速查</a><span aria-hidden="true">/</span><span>{{ p.group }}</span></nav>
+<div class="problem-layout">
+  <article class="problem">
+    <header class="page-head">
+      <h1>{{ p.title }}</h1>
+      <p class="lead">{{ p.symptom }}</p>
+    </header>
+    <div class="prose">{{ body|safe }}</div>
+    <section class="card card-goal">
+      <h2>要补的课</h2>
+      <ul class="lesson-links">{% for lid in p.lessons %}<li><a href="{{ lu(lid) }}"><b>{{ lessons[lid].no }}</b> {{ lessons[lid].title }}</a></li>{% endfor %}</ul>
+    </section>
+  </article>
+</div>
+{% endblock %}

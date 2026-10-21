@@ -1,0 +1,21 @@
+# v4：M5、M6 准确性修改时新增的出处
+- id: v4-deltae-101
+  title: Delta E 101（色差值 ΔE 入门）
+  url: http://zschuessler.github.io/DeltaE/learn/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 用一张表说明 ΔE 多大时人眼看得出差别（1～2 要细看、2～10 一眼看得出），并讲了 CIE76、CIE94、CIEDE2000 三个公式。作者注明这张表是自测经验，不是权威标准。5.6 课的校色及格线拿它作对照。
+  lessons:
+  - m5-06
+- id: v4-wiki-color-difference
+  title: 颜色差异（维基百科）
+  url: https://zh.wikipedia.org/wiki/%E9%A2%9C%E8%89%B2%E5%B7%AE%E5%BC%82
+  platform: 维基百科
+  type: 文章
+  paid: false
+  lang: zh
+  why: 中文介绍 ΔE 和 CIEDE2000 色差公式。想自己验证 5.6 课里"色相差 10 大约是多少色差"的计算，可以照着这里的公式算。
+  lessons:
+  - m5-06

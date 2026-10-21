@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% set mod = les.module %}
+{% set lv = {'入门':'a','基础':'b','进阶':'c','高阶':'d'}[mod.level] %}
+{% block desc %}{{ les.no }} {{ les.title }}：{{ (les.summary or les.outline)|truncate(90, True, '…') }}{% endblock %}
+{% block mainclass %}page page-lesson{% endblock %}
+{% block content %}
+<nav class="crumbs" aria-label="位置"><a href="{{ u('/map/') }}">课程地图</a><span aria-hidden="true">/</span><a href="{{ u('/' ~ mod.id ~ '/') }}">M{{ mod.no }} {{ mod.title }}</a><span aria-hidden="true">/</span><span>{{ les.no }}</span></nav>
+
+<div class="lesson-layout">
+  <aside class="lesson-side">
+    <details class="side-toc" open>
+      <summary>M{{ mod.no }} {{ mod.title }}</summary>
+      <ol>
+        {% for l in mod.lessons %}
+        <li><a href="{{ lu(l.id) }}" data-lesson-row="{{ l.id }}"{% if l.id == les.id %} aria-current="page" class="is-current"{% endif %}><span class="lr-check" aria-hidden="true"></span><span>{{ l.no }} {{ l.title }}</span></a></li>
+        {% endfor %}
+      </ol>
+    </details>
+    {% if toc %}
+    <nav class="side-sections" aria-label="本课目录">
+      <p>本课目录</p>
+      <ol>{% for t in toc %}<li><a href="#{{ t.id }}" data-toc-link>{{ t.name|safe }}</a></li>{% endfor %}</ol>
+    </nav>
+    {% endif %}
+  </aside>
+
+  <article class="lesson" data-lesson="{{ les.id }}">
+    <header class="lesson-head">
+      <h1><span class="lesson-no">{{ les.no }}</span>{{ les.title }}</h1>
+      {% if les.summary %}<p class="lead">{{ les.summary }}</p>{% endif %}
+      <ul class="chips">
+        <li class="chip">{{ les.duration }}</li>
+        <li class="chip chip-lv-{{ lv }}">{{ mod.level }}</li>
+        {% for t in les.tools or ['Procreate'] %}<li class="chip">{{ t }}</li>{% endfor %}
+      </ul>
+      {% if prereq %}
+      <p class="prereq">建议先学：{% for p in prereq %}<a href="{{ lu(p.id) }}">{{ p.no }} {{ p.title }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</p>
+      {% endif %}
+    </header>
+
+    {% if not les.written %}
+    <div class="callout callout-tip">
+      <p class="callout-title">这节课正在编写</p>
+      <p>正文还没写完。下面先列出本课要讲的内容、找图要求和作业，你可以先看对应资料、把作业要用的照片准备好。</p>
+    </div>
+    <section class="lesson-outline">
+      <h2>本课要讲</h2>
+      {{ les.outline|md|safe }}
+      {% if les.pitfall %}
+      <div class="callout callout-warn"><p class="callout-title">易错</p><p>{{ les.pitfall }}</p></div>
+      {% endif %}
+    </section>
+    {% endif %}
+
+    {% if les.goals %}
+    <section class="card card-goal">
+      <h2>学完你能做到</h2>
+      <ul class="ticks">{% for g in les.goals %}<li>{{ g|mdi|safe }}</li>{% endfor %}</ul>
+    </section>
+    {% endif %}
+
+    {% if body %}<div class="prose">{{ body|safe }}</div>{% endif %}
+
+    {% if res or refs %}
+    <section class="lesson-res" id="resources">
+      {% if res %}
+      <h2>学习资料</h2>
+      <p class="res-note">资料里用 PS 讲的功能，在 Procreate 里叫什么，查 <a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>。</p>
+      <ul class="res-list">
+        {% for r in res %}
+        <li class="res-item"><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a>
+          <span class="res-tags"><span class="pill">{{ r.platform }}</span><span class="pill">{{ r.type }}</span>{% if r.paid %}<span class="pill pill-paid">付费</span>{% endif %}</span>
+          {% if r.why %}<p>{{ r.why }}</p>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if refs %}
+      <h2>参考资料</h2>
+      <ul class="res-list res-list-compact">
+        {% for r in refs %}
+        <li class="res-item"><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a>
+          <span class="res-tags"><span class="pill">{{ r.platform }}</span></span>{% if r.why %}<p>{{ r.why }}</p>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </section>
+    {% endif %}
+
+    <section class="card card-find" id="find">
+      <h2>找图</h2>
+      {{ les.find|md|safe }}
+      <p class="card-foot">不知道去哪找？看<a href="{{ u('/about/#photos') }}">找图清单</a>。</p>
+    </section>
+
+    <section class="card card-hw" id="homework">
+      <h2>作业</h2>
+      {% if les.homework is mapping %}
+        {{ les.homework.task|md|safe }}
+        <h3>验收标准</h3>
+        <ul class="ticks">{% for a in les.homework.acceptance %}<li>{{ a|mdi|safe }}</li>{% endfor %}</ul>
+        {% if les.homework.deliverables %}
+        <h3>要交的东西</h3>
+        <ul>{% for d in les.homework.deliverables %}<li>{{ d|mdi|safe }}</li>{% endfor %}</ul>
+        {% endif %}
+      {% else %}
+        <p>{{ les.homework|mdi|safe }}</p>
+        <h3>验收标准</h3>
+        <p>{{ les.acceptance|mdi|safe }}</p>
+      {% endif %}
+      <label class="hw-toggle"><input type="checkbox" data-hw="{{ les.id }}"> 我完成了这次作业，并且达到了验收标准</label>
+    </section>
+
+    {% if les.checklist %}
+    <section class="card card-check" data-checklist="{{ les.id }}">
+      <h2>自检清单</h2>
+      <p class="card-sub">交作业前逐条对一遍。勾选状态会保存在本机。</p>
+      <ul class="checklist">
+        {% for c in les.checklist %}
+        <li><label><input type="checkbox" data-check-index="{{ loop.index0 }}"> <span>{{ c|mdi|safe }}</span></label></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    {% if related %}
+    <section class="related">
+      <h2>相关问题</h2>
+      <ul class="sticker-wall">{% for p in related %}<li><a class="sticker{% if p.body_md %} has-page{% endif %}" href="{{ u('/problems/' ~ p.slug ~ '/') if p.body_md else u('/problems/#' ~ p.slug) }}">{{ p.title }}</a></li>{% endfor %}</ul>
+    </section>
+    {% endif %}
+
+    <footer class="lesson-foot">
+      <button class="btn btn-primary btn-done" type="button" data-done="{{ les.id }}" aria-pressed="false">标记本课已完成</button>
+      <nav class="pager" aria-label="上一课和下一课">
+        {% if prev %}<a class="btn pager-prev" href="{{ lu(prev.id) }}">上一课：{{ prev.no }} {{ prev.title }}</a>{% endif %}
+        {% if nxt %}<a class="btn pager-next" href="{{ lu(nxt.id) }}">下一课：{{ nxt.no }} {{ nxt.title }}</a>{% endif %}
+      </nav>
+    </footer>
+  </article>
+</div>
+{% endblock %}

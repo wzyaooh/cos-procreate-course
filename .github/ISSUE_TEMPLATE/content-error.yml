@@ -1,0 +1,32 @@
+name: 内容错误
+description: 讲错了、数字不对、步骤做不出来、错别字、链接失效
+title: "[内容] "
+labels: ["内容"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 网页地址
+      description: 哪一课、哪一节，或者问题速查、资料库的哪一条
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 讲错了 / 原理不对
+        - 数字不对或没有出处
+        - 照着做做不出来
+        - 资料链接失效
+        - 错别字 / 表述不清
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 具体情况
+      description: 哪里不对、你觉得应该怎么写；有出处请附上链接
+    validations:
+      required: true

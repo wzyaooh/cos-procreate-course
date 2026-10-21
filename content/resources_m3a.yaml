@@ -1,0 +1,133 @@
+# M3 视觉基础理论 3.1～3.4 新增的资料（id 前缀 m3a-）
+- id: m3a-proko-light
+  title: Shading Light and Form – Basics（光影基础）
+  url: https://www.proko.com/course-lesson/shading-light-and-form-basics/
+  platform: Proko
+  type: 视频
+  paid: false
+  lang: en
+  why: Stan Prokopenko 用鸡蛋讲明暗交界线、反光、投影和闭塞阴影，和 3.1 的鸡蛋练习一一对应。基础版免费，英文可开自动字幕。
+  lessons:
+  - m3-01
+- id: m3a-sohu-portrait-light
+  title: 六种不可不懂的人像摄影布光
+  url: https://www.sohu.com/a/366749518_225576
+  platform: 搜狐
+  type: 文章
+  paid: false
+  lang: zh
+  why: 分割光、伦勃朗光、环形光、蝴蝶光等人像光位的实拍对比，读 cos 照片的光源方向时可以对照。
+  lessons:
+  - m3-01
+- id: m3a-uisdc-hsb
+  title: 学会 HSB 色彩模式，让配色有理有据！
+  url: https://www.uisdc.com/hsb-color-pattern
+  platform: 优设网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 用 HSB 三个数分析配色的思路，和 3.2 用「值」面板读色值是同一套方法。
+  lessons:
+  - m3-02
+- id: m3a-zcool-skin
+  title: 人像后期教程丨如何修正肤色
+  url: https://www.zcool.com.cn/article/ZMTE2MTIwOA==.html
+  platform: 站酷
+  type: 文章
+  paid: false
+  lang: zh
+  why: 商业修图里常见的肤色问题区域（发际线脏黄、眼周发黄、鼻头偏品红、手部发红）怎么找、怎么统一。工具是 PS，思路通用。
+  lessons:
+  - m3-03
+- id: m3a-uisdc-skin
+  title: PS 后期教程！如何调出通透干净的人物肤色？
+  url: https://www.uisdc.com/photoshop-adjust-skin-color
+  platform: 优设网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲肤色发脏和互补色的关系，以及先去黄、再整理橙黄饱和度的顺序。
+  lessons:
+  - m3-03
+- id: m3a-loomis-figure
+  title: Andrew Loomis《Figure Drawing for All It's Worth》
+  url: https://archive.org/details/loomis_FIGURE_draw
+  platform: Internet Archive
+  type: 书
+  paid: false
+  lang: en
+  why: 经典人体比例书（1943 年版扫描），前几章的头身比例图把男女、不同头身的分界点都画出来了，看图就能懂。
+  lessons:
+  - m3-04
+- id: m3a-hb-value
+  title: Procreate 使用手册：值
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-value
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 色彩面板「值」页的色相（0°～360°）、饱和度、亮度（%）、RGB 和十六进制，读色值以这页为准。
+  lessons: []
+- id: m3a-hb-color-ui
+  title: Procreate 使用手册：色彩界面（含吸管）
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 长按画布取色、侧栏「修改」按钮取色、对当前图层取样的说明。
+  lessons: []
+- id: m3a-hb-palettes
+  title: Procreate 使用手册：调色板
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-palettes
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 新建调色板、存色卡、从照片自动生成调色板。
+  lessons: []
+- id: m3a-hb-color-adjust
+  title: Procreate 使用手册：色彩调整
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 色相、饱和度、亮度和颜色平衡（高亮区域、中间调、阴影）的说明。
+  lessons: []
+- id: m3a-hb-layers-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 填充图层、蒙版、阿尔法锁定等图层选项的官方说明。
+  lessons: []
+- id: m3a-hb-blur
+  title: Procreate 使用手册：模糊
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-blur
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 高斯模糊的手势：在画面上左右滑动调整程度。
+  lessons: []
+- id: m3a-hb-guide-create
+  title: Procreate 使用手册：绘图指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guide-create
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 绘图指引界面的颜色、不透明度、粗细度、网格大小和辅助绘图开关。
+  lessons: []
+- id: m3a-hb-quickshape
+  title: Procreate 使用手册：速创形状
+  url: https://help.procreate.com/cn/procreate/handbook/guides/quickshape
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 画完停住，线条自动变直，画标尺和分界线时用。
+  lessons: []

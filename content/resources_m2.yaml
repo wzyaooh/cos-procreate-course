@@ -1,0 +1,183 @@
+- id: m2-hb-adj-interface
+  title: Procreate 使用手册：调整的界面及手势
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 讲调整菜单分成「调整」和「滤镜」两半、图层和 Pencil 两种模式、轻点画布弹出的调整操作菜单。
+  lessons:
+  - m2-01
+- id: m2-hb-adj-color
+  title: Procreate 使用手册：色彩调整
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 色相饱和度亮度、颜色平衡、曲线、渐变映射四个工具的界面说明，曲线的节点和通道写得最清楚。
+  lessons:
+  - m2-01
+- id: m2-bili-procreate-gradmap
+  title: Procreate 教程 - 渐变映射的使用方式
+  url: https://www.bilibili.com/video/BV1La411w7Es/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: Procreate 官方账号出的 4 分钟短片，演示渐变色库和自己做渐变。
+  lessons:
+  - m2-01
+- id: m2-bili-procreate-clone
+  title: Procreate 教程 - 克隆工具
+  url: https://www.bilibili.com/video/BV1f7411f7AE/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: Procreate 官方账号出的不到 2 分钟的短片，看一遍圆盘怎么跟着笔走、怎么换克隆笔刷。
+  lessons:
+  - m2-02
+- id: m2-bili-procreate-liquify
+  title: Procreate 教程 - 液化工具的使用方式
+  url: https://www.bilibili.com/video/BV1HQ4y1P7UJ/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: Procreate 官方账号出的 3 分钟短片，几种液化模式的效果一次看完。
+  lessons:
+  - m2-03
+- id: m2-zhihu-adjust-tools
+  title: 第六期 procreate 系列教程【调整工具篇】：细节细节细节！
+  url: https://zhuanlan.zhihu.com/p/147010999
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 图文把调整菜单里的工具挨个过了一遍，液化的推、转动、捏合、展开有配图。
+  lessons:
+  - m2-01
+  - m2-03
+- id: m2-hb-blur
+  title: Procreate 使用手册：模糊
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-blur
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 高斯模糊、动态模糊、透视模糊的手势，透视模糊的「位置」「方向」两种模式。
+  lessons:
+  - m2-04
+- id: m2-hb-noise
+  title: Procreate 使用手册：杂色
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-noise
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 云、巨浪、背脊三种模式，比例、倍频、湍流三个滑块，以及通道里的单一、多个、叠加。
+  lessons:
+  - m2-04
+- id: m2-hb-sharpen
+  title: Procreate 使用手册：锐化
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-sharpen
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 锐化的手势和程度显示，很短。
+  lessons:
+  - m2-04
+- id: m2-bili-noise-sharpen
+  title: 【Procreate教程】巧妙运用：杂色/泛光/色相差/故障艺术/锐化功能
+  url: https://www.bilibili.com/video/BV1Rd4y1K73w/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 约 10 分钟，杂色和锐化的效果对比看得比较清楚；泛光、色像差留到 6.1 课再看也行。
+  lessons:
+  - m2-04
+  - m6-01
+- id: m2-hb-sel-auto
+  title: Procreate 使用手册：自动选取
+  url: https://help.procreate.com/cn/procreate/handbook/selections/selections-automatic
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 选区阈值怎么调（点住不放左右拖），以及自动选取和手绘配合使用。
+  lessons:
+  - m2-05
+- id: m2-hb-layer-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 重命名、阿尔法锁定、蒙版、向下合并、向下组合等每一项的说明。
+  lessons:
+  - m2-05
+  - m2-06
+- id: m2-bili-cutout-two
+  title: 盘点 Procreate 快速抠图的两种方法！
+  url: https://www.bilibili.com/video/BV1yX4y1S7vh/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 1 分多钟，自动选取和手绘选取两种抠法各演示一遍。
+  lessons:
+  - m2-05
+- id: m2-bili-cutout-transparent
+  title: 【教程】如何用 procreate 把照片抠成透明底
+  url: https://www.bilibili.com/video/BV1gu4m137uY/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 1 分多钟，演示抠完以后隐藏背景颜色、导出透明底 PNG。
+  lessons:
+  - m2-05
+- id: m2-hb-layers-organize
+  title: Procreate 使用手册：管理图层
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 主要图层和次要图层、向右滑多选、编组、取消组，以及复制图层会带上蒙版和混合模式。
+  lessons:
+  - m2-06
+- id: m2-hb-gallery-organize
+  title: Procreate 使用手册：管理作品
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 图库里复制作品、重命名作品、把作品叠成「堆」。
+  lessons:
+  - m2-06
+- id: m2-hb-actions-share
+  title: Procreate 使用手册：分享
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-share
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: Procreate、PSD、JPEG、PNG、TIFF 各格式的区别和什么时候用。
+  lessons:
+  - m2-06
+- id: m2-bili-layer-groups
+  title: 【procreate】教程029：图层太多如何整理，建组拆组合并怎么操作？
+  url: https://www.bilibili.com/video/BV1eP4y1C7fp/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 不到 2 分钟，把建组、拆组、合并的手势演示一遍。
+  lessons:
+  - m2-06

@@ -1,0 +1,29 @@
+name: 检查和构建
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+      - name: 内容检查（用词、步骤卡、数字写法）
+        run: python tools/lint.py --numbers
+      - name: 构建
+        run: python tools/build.py --out site
+      - name: 站内链接和锚点
+        run: python tools/check_site.py site
+      - name: 构建预览版
+        run: python tools/build.py --out preview --preview

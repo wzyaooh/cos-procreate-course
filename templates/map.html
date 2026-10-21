@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>课程地图</h1>
+  <p class="lead">共 {{ lessons|length }} 节课。打勾的是你已经学完的。</p>
+</div>
+{% for m in modules %}
+<section class="map-module lv-{{ {'入门':'a','基础':'b','进阶':'c','高阶':'d'}[m.level] }}" id="{{ m.id }}">
+  <header class="map-module-head">
+    <h2><a href="{{ u('/' ~ m.id ~ '/') }}"><span class="mod-no">M{{ m.no }}</span>{{ m.title }}</a></h2>
+    <p>{{ m.summary }}<span class="map-meta">{{ m.level }}，{{ m.lessons|length }} 课，约 {{ m.hours }} 小时</span></p>
+  </header>
+  <ol class="lesson-list">
+    {% for l in m.lessons %}
+    <li>
+      <a class="lesson-row" href="{{ lu(l.id) }}" data-lesson-row="{{ l.id }}">
+        <span class="lr-check" aria-hidden="true"></span>
+        <span class="lr-no">{{ l.no }}</span>
+        <span class="lr-title">{{ l.title }}</span>
+        <span class="lr-time">{{ l.duration }}</span>
+        {% if not l.written %}<span class="pill pill-muted">编写中</span>{% endif %}
+        <span class="sr-only" data-done-label></span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>问题速查</h1>
+  <p class="lead">按症状找。每个问题都标了要回去补的课；带「详细修法」的点进去有完整步骤。</p>
+</div>
+{% for g, items in groups %}
+<section class="prob-group">
+  <h2>{{ g }}</h2>
+  <div class="prob-grid">
+    {% for p in items %}
+    <article class="prob-card{% if p.body_md %} has-page{% endif %}" id="{{ p.slug }}">
+      <h3>{% if p.body_md %}<a href="{{ u('/problems/' ~ p.slug ~ '/') }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+      <p>{{ p.symptom }}</p>
+      <p class="prob-lessons">要补的课：{% for lid in p.lessons %}<a href="{{ lu(lid) }}">{{ lessons[lid].no }} {{ lessons[lid].title }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</p>
+      {% if p.body_md %}<a class="btn btn-small" href="{{ u('/problems/' ~ p.slug ~ '/') }}">看详细修法</a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

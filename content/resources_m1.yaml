@@ -1,0 +1,262 @@
+# M1 Procreate 基础操作 追加的资料
+- id: m1-hb-interface
+  title: Procreate 使用手册：界面
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 画布界面三大块（左上高级功能、右上绘图工具、左边侧栏）每个按钮的官方说明。
+  lessons: [m1-01]
+- id: m1-hb-add
+  title: Procreate 使用手册：添加
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-add
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 「插入照片」「插入文件」「插入私人照片」和剪切、拷贝、粘贴的说明。
+  lessons: [m1-01, m1-06]
+- id: m1-hb-share
+  title: Procreate 使用手册：分享
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-share
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: Procreate、PSD、JPEG、PNG、TIFF 各自保留什么，官方逐条写了。
+  lessons: [m1-01]
+- id: m1-hb-file-types
+  title: Procreate 使用手册：文件格式
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-file-types
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 能导入、导出哪些格式；PSD 导入时保留哪些图层信息。
+  lessons: [m1-01]
+- id: m1-procreate-image-quality
+  title: Why do my images lose quality with transform?
+  url: https://help.procreate.com/articles/drggqy-image-quality
+  platform: Procreate 官方
+  type: 文章
+  paid: false
+  lang: en
+  why: 官方解释为什么缩放、变换会让照片变糊，以及插值怎么选。
+  lessons: [m1-01, m1-06]
+- id: m1-hb-gestures
+  title: Procreate 使用手册：手势快捷
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/gestures
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 撤销、重做、快速捏合、三指擦触、四指全屏、图层面板手势的完整列表。
+  lessons: [m1-02]
+- id: m1-hb-copypaste
+  title: Procreate 使用手册：拷贝并粘贴菜单
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/copypaste
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 三指下滑菜单里剪切、拷贝、全部拷贝、复制、剪切并粘贴、粘贴六个按钮的区别。
+  lessons: [m1-02]
+- id: m1-hb-paint-smudge-erase
+  title: Procreate 使用手册：绘图、涂抹与擦除
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/paint-smudge-erase
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 三个工具共用画笔库、涂抹力度和不透明度的关系、怎么存常用的尺寸和不透明度。
+  lessons: [m1-03]
+- id: m1-hb-brush-library
+  title: Procreate 使用手册：画笔库
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-library
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 新版画笔库分「Procreate 库」和「经典库」，以及复制、重置画笔的方法。
+  lessons: [m1-03]
+- id: m1-hb-brush-studio
+  title: Procreate 使用手册：画笔工作室设置
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-studio-settings
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 「稳定性」里流线、稳定性、动作过滤三组滑块各自管什么。
+  lessons: [m1-03]
+- id: m1-bishua-brush-names
+  title: Procreate 笔刷中英文对照表
+  url: https://www.bishua.art/combination/procreate_brush.html
+  platform: 笔刷库网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 自带笔刷的英文、繁体、简体名称对照，看英文教程时用来找对应的笔。
+  lessons: [m1-03]
+- id: m1-getai-stabilization
+  title: procreate 笔刷稳定性在哪？参数怎么设置？
+  url: https://www.96p.net/jiaocheng/procreate/8560.html
+  platform: GetAI 社区
+  type: 文章
+  paid: false
+  lang: zh
+  why: 中文图文说明流线、稳定性、动作过滤在哪调，可以和本课对照看。
+  lessons: [m1-03]
+- id: m1-hb-layers-interface
+  title: Procreate 使用手册：图层界面
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 图层面板每个部分的作用，包括「图层」菜单的批量操作和单独可见性。
+  lessons: [m1-04]
+- id: m1-hb-layers-organize
+  title: Procreate 使用手册：管理图层
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 主要图层和次要图层、编组、移动、锁定、复制、删除。
+  lessons: [m1-04]
+- id: m1-hb-layers-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 图层选项菜单每一项的说明；阿尔法锁定、蒙版、剪辑蒙版三者的官方定义在这里。
+  lessons: [m1-04, m1-05]
+- id: m1-bili-blend-principle
+  title: 【procreate进阶教程】混合模式原理和用法/正片叠底怎么用/图层模式
+  url: https://www.bilibili.com/video/BV1H4411i7HK/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 约 20 分钟，在 Procreate 里实际演示正片叠底、叠加（覆盖）、颜色、色相等模式，配合本课的原理图看。
+  lessons: [m1-04]
+- id: m1-bili-blend-painting
+  title: 【板绘】你不知道的正片叠底、叠加等图层混合模式
+  url: https://www.bilibili.com/video/av54713934/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 板绘角度讲常用混合模式；里面说的「叠加」在 Procreate 中文版里叫「覆盖」。
+  lessons: [m1-04]
+- id: m1-csdn-blend-formula
+  title: PS图层混合算法之三（滤色，叠加，柔光，强光）
+  url: https://blog.csdn.net/matrix_space/article/details/22426633
+  platform: CSDN
+  type: 文章
+  paid: false
+  lang: zh
+  why: 想看混合模式具体公式的可以读这篇；本课原理图里的计算就是按这类公式画的。
+  lessons: [m1-04]
+- id: m1-zhihu-mask-three
+  title: Procreate 里阿尔法锁定、剪辑蒙版、蒙版的使用方法
+  url: https://zhuanlan.zhihu.com/p/452865060
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 把三种功能放在一起演示，可以和本课的对比图对照着看。
+  lessons: [m1-05]
+- id: m1-zhihu-clip-alpha
+  title: procreate 细聊一下剪辑蒙版和阿尔法锁定的区别
+  url: https://zhuanlan.zhihu.com/p/527927488
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 专门讲剪辑蒙版和阿尔法锁定哪个会改动原图层、什么时候用哪个。
+  lessons: [m1-05]
+- id: m1-hb-sel-interface
+  title: Procreate 使用手册：选取的界面与手势
+  url: https://help.procreate.com/cn/procreate/handbook/selections/selections-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 选取工具底栏每个按钮（添加、移除、反转、拷贝并粘贴、羽化、存储并加载、颜色填充、清除）的说明。
+  lessons: [m1-05, m1-06]
+- id: m1-hb-sel-automatic
+  title: Procreate 使用手册：自动选取
+  url: https://help.procreate.com/cn/procreate/handbook/selections/selections-automatic
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 自动选取的选区阈值怎么调。
+  lessons: [m1-05, m1-06]
+- id: m1-hb-sel-advanced
+  title: Procreate 使用手册：高级选取
+  url: https://help.procreate.com/cn/procreate/handbook/selections/selections-advanced
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 重载上一个选区、存储并加载、选择图层内容三个技巧。
+  lessons: [m1-06]
+- id: m1-hb-distort
+  title: Procreate 使用手册：扭曲
+  url: https://help.procreate.com/cn/procreate/handbook/transform/transform-distort
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 扭曲拖角做透视、拖边做错切，以及自由变换里长按角点临时切到扭曲。
+  lessons: [m1-06]
+- id: m1-hb-warp
+  title: Procreate 使用手册：弯曲
+  url: https://help.procreate.com/cn/procreate/handbook/transform/transform-warp
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 弯曲网格和高级网格的用法。
+  lessons: [m1-06]
+- id: m1-hb-interpolate
+  title: Procreate 使用手册：插值
+  url: https://help.procreate.com/cn/procreate/handbook/transform/transform-interpolate
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 最近邻、双线性、双立体分别取多少个像素来算，为什么双立体最平滑。
+  lessons: [m1-06]
+- id: m1-hb-snapping
+  title: Procreate 使用手册：对齐
+  url: https://help.procreate.com/cn/procreate/handbook/transform/snapping
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 对齐的距离、速度滑块，以及磁性怎么把移动锁在一条线上。
+  lessons: [m1-06]
+- id: m1-procreate-transform-cutoff
+  title: Why does Procreate cut parts off my artwork after applying Transform?
+  url: https://help.procreate.com/articles/dvrnmd-transform-cutting-off-artwork
+  platform: Procreate 官方
+  type: 文章
+  paid: false
+  lang: en
+  why: 官方说明：变换时移到画布外的部分，确认后就被裁掉，拖回来也找不回。
+  lessons: [m1-06]
+- id: m1-jingyan-distort-warp
+  title: 如何玩转 Procreate 之扭曲弯曲篇
+  url: https://jingyan.baidu.com/article/a3a3f811a85a6ccca3eb8a7b.html
+  platform: 百度经验
+  type: 文章
+  paid: false
+  lang: zh
+  why: 一步一图演示扭曲和弯曲，适合第一次用的时候对照。
+  lessons: [m1-06]

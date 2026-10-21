@@ -1,0 +1,71 @@
+- id: v4m34-videomaker-vectorscope
+  title: What are vectorscopes and why are they important?（示波器是什么、为什么重要）
+  url: https://www.videomaker.com/how-to/editing/color-correction/what-are-vectorscopes-and-why-are-they-important/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 讲视频调色里的矢量示波器怎么读：越靠外越饱和；"肤色线"在红和黄之间约 11 点钟方向，不同族裔的皮肤都可以对着这条线校正。3.3 课"肤色色相集中"的出处之一。
+  lessons:
+  - m3-03
+- id: v4m34-ptc-vectorscope
+  title: Perfect Skin Tones in Photoshop with the Vectorscope（用示波器调准肤色）
+  url: https://photoshoptrainingchannel.com/perfect-skin-tones-vectorscope-photoshop/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: Camera Raw 里的示波器：角度是色相，离圆心的距离是饱和度；原文写所有肤色色相相同，差别只在饱和度和亮度，所以一条肤色线对所有人都适用。
+  lessons:
+  - m3-03
+- id: v4m34-fstoppers-vectorscope
+  title: Vectorscope Trick for Perfect Skin Tones（示波器调肤色的技巧）
+  url: https://fstoppers.com/photoshop/vectorscope-trick-perfect-skin-tones-camera-raw-904641
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 同样讲"不同人的肤色色相大致相同，区别在深浅和饱和度"；还提醒肤色在示波器上是一片而不是一个点，目标是聚在线附近，不是对准某个数。
+  lessons:
+  - m3-03
+- id: v4m34-nobe-vectorscope
+  title: Nobe OmniScope 手册：Vectorscope（矢量示波器）
+  url: https://docs.timeinpixels.com/nobe-omniscope/scopes/vectorscope
+  platform: 其他网站
+  type: 手册
+  paid: false
+  lang: en
+  why: 示波器软件的官方手册：肤色线可以展开成一条容差带，带宽常用 ±10° 或 ±20°，落在带外就说明色相偏离了。3.3 课"允许的范围"出处。
+  lessons:
+  - m3-03
+- id: v4m34-grindrod-skintone
+  title: EASY Skin Tone Guide - DaVinci Resolve Tutorial（达芬奇肤色入门）
+  url: https://www.danielgrindrod.com/blog/skintone
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 调色师的肤色笔记：不论人种，肤色都应在同一条线附近；饱和度因人而异，粗略经验是在示波器上落在 20%～50%。注意这是示波器的刻度，不是 Procreate 的 S。
+  lessons:
+  - m3-03
+- id: v4m34-polaxiong-cast
+  title: 如何校正画面的色偏
+  url: https://polaxiong.com/wiki/hou-qi-jiao-cheng/ru-he-xiao-zheng-hua-mian-de-se-pian.html
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 主流的整体校色口诀：偏黄降色温加蓝、偏蓝加黄、偏绿加洋红、偏洋红加绿。3.3 课用它说明"整张照片偏色"和"皮肤本身偏黄"的区别。
+  lessons:
+  - m3-03
+  - m4-02
+- id: v4m34-adobe-lrc-tone
+  title: Adobe 帮助：如何在 Lightroom Classic 中调整图像色调和颜色
+  url: https://helpx.adobe.com/cn/lightroom-classic/help/image-tone-color.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方中文说明：曝光度 +1.00 相当于光圈开大一档；JPEG 等非原始文件的色温是 -100～100 的刻度，原始文件才用开尔文。写的是电脑版，滑块含义和手机版一致。
+  lessons:
+  - m4-02

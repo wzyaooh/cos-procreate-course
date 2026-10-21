@@ -1,0 +1,36 @@
+- kind: 过曝、欠曝、曝光正常的照片各一张
+  lessons: [m0-02, m4-02]
+- kind: 衣服颜色单一的全身或半身照
+  lessons: [m1-05]
+- kind: 偏色照片（室内暖光、漫展日光灯）
+  lessons: [m2-01, m4-02]
+- kind: 能看清皮肤的面部特写
+  lessons: [m2-02, m4-03]
+- kind: 背景里有直线（门框、地砖）的照片
+  lessons: [m2-03, m5-04]
+- kind: 前后景深分明的户外照片
+  lessons: [m2-04, m6-04]
+- kind: 头发边缘清楚的照片
+  lessons: [m2-05, m5-01]
+- kind: 侧光人像
+  lessons: [m3-01]
+- kind: 光线平、脸显扁的人像
+  lessons: [m4-04]
+- kind: 俯拍、平拍、仰拍的全身照
+  lessons: [m3-04, m5-04]
+- kind: 广角近拍的脸、合影边缘的人
+  lessons: [m3-06]
+- kind: 假发有杂毛或露真发的照片
+  lessons: [m5-01]
+- kind: 眼睛近景
+  lessons: [m5-02]
+- kind: 衣服有乱褶、带道具的照片
+  lessons: [m5-03]
+- kind: 有路人或灯架的漫展场照
+  lessons: [m5-05, m7-03]
+- kind: 手持武器、施法姿势的照片
+  lessons: [m6-03]
+- kind: 角色官方设定图（只用来取色）
+  lessons: [m3-02, m5-06]
+- kind: 背景图（森林、城市、夜景等）
+  lessons: [m7-01]

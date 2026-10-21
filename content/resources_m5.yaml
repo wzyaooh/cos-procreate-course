@@ -1,0 +1,204 @@
+# M5 cos 专项（5.1 5.2 5.3 5.5 5.6）新增的资料
+- id: bili-hair-paint
+  title: COS 照后期补画头发教程（干货）
+  url: https://www.bilibili.com/video/BV1wv4y1C7xZ/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 专门讲给 cos 照补画头发，不到 1 分钟的短片，作者自称没有绘画基础，适合第一次补发丝时对照着看。
+  lessons:
+  - m5-01
+- id: bili-hairline-wig
+  title: 【月黑】教你做出逼真自然的发际线（假发教程进阶版）
+  url: https://www.bilibili.com/video/av51537038/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 讲拍摄前怎样在假发上做出自然的发际线。看懂真发际线由密到稀的结构，后期补发际线也有了参照。
+  lessons:
+  - m5-01
+- id: freya-hair-procreate
+  title: 'How to Draw Hair in Procreate: Chunks First, Lines Last'
+  url: https://freya.courses/blog/how-to-draw-hair-in-procreate
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 用 Procreate 画头发的思路：先分大块，再定方向，最后才画细线。和本课"先暗缝、再发束、最后高光"的顺序一致。
+  lessons:
+  - m5-01
+- id: phlearn-eyes
+  title: 'Retouching Eyes in Photoshop: Brighten, Sharpen, Recolor'
+  url: https://phlearn.com/tutorial/master-retouching-eyes/
+  platform: 其他网站
+  type: 视频
+  paid: false
+  lang: en
+  why: PS 的修眼教程，讲提亮、锐化和换瞳色。工具和 Procreate 不同，但"只在虹膜上改色、保留纹理和眼神光"的思路一样。
+  lessons:
+  - m5-02
+- id: sohu-catchlight
+  title: 【摄影后期】看懂这篇文章，让你张张人像都有眼神光
+  url: https://www.sohu.com/a/287213395_194997
+  platform: 搜狐
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲眼神光的作用、位置和形状怎么跟着光源走，补眼神光之前可以读一遍。
+  lessons:
+  - m5-02
+- id: wiki-catchlight
+  title: Catch light（维基百科）
+  url: https://en.wikipedia.org/wiki/Catch_light
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 眼神光的定义和例子，包括电影里去掉眼神光来表现角色"没有生气"的做法。
+  lessons:
+  - m5-02
+- id: istarry-folds
+  title: PS 怎么修衣服褶皱？新手零基础 3 种实用去除褶皱方法
+  url: https://istarry.com.cn/ps/clothes-wrinkle-retouch-ps/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲了哪些褶该留（肩线、袖笼这些结构处）、哪些该去，以及几种去褶工具各适合什么情况。文中有 AI 插件推广，看方法部分就行。
+  lessons:
+  - m5-03
+- id: sohu-folds-7
+  title: 【速写】衣纹褶皱 7 大类型：自然垂落型、联结型、之字型等
+  url: https://www.sohu.com/a/168193749_178959
+  platform: 搜狐
+  type: 文章
+  paid: false
+  lang: zh
+  why: 从绘画的角度讲褶皱是怎么由动作和受力产生的，帮你判断一道褶是不是结构褶。
+  lessons:
+  - m5-03
+- id: fixthephoto-wrinkles
+  title: How to Remove Clothing Wrinkles in Photoshop Tutorial
+  url: https://fixthephoto.com/how-to-remove-clothing-wrinkles-in-photoshop.html
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: PS 去衣服褶皱的几种方法，包括画笔加曲线和高低频。可以对照理解为什么本课用柔光图层改明暗。
+  lessons:
+  - m5-03
+- id: breathingcolor-dodge
+  title: 'Popular Tools in Photoshop: Dodge and Burn'
+  url: https://www.breathingcolor.com/blogs/news/photoshop-dodge-and-burn
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 讲加深减淡的原理，配了西装和连衣裙去褶的前后对比，能直观看到"提亮暗沟、压暗亮棱"的效果。
+  lessons:
+  - m5-03
+- id: amandagrace-clone
+  title: How to Use the Clone Tool in Procreate (Step by Step)
+  url: https://www.amandagracedesign.com/blog/timesaving-procreate-clone-tool
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: Procreate 克隆工具的图文步骤，包括取样圆盘、锁定和换笔刷，可以和本课的大面积克隆一起看。
+  lessons:
+  - m5-05
+- id: istarry-extend
+  title: PS 怎么扩图？3 种方法拯救你的构图，背景补齐不留痕迹
+  url: https://istarry.com.cn/ps/ps-kuotu-kuochong-beijing-tutorial/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲扩展画布后怎么补背景。PS 的内容识别 Procreate 没有，但"先扩画布、再从旁边取样补齐"的思路相同。文中有插件推广。
+  lessons:
+  - m5-05
+- id: istarry-hair-color
+  title: PS 换发色怎么做？3 种方法给头发换颜色不穿帮
+  url: https://istarry.com.cn/ps/ps-change-hair-color-3-methods/
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: PS 里给头发换色的几种方法，其中"纯色图层 + 颜色模式 + 剪贴蒙版"就是本课在 Procreate 里的做法。
+  lessons:
+  - m5-06
+- id: bili-rem-color
+  title: 简单的单闪光灯摄影：漫展蕾姆 COS 从拍摄前期到后期调色思路
+  url: https://www.bilibili.com/video/BV1sD4y1U7Ri/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 一个漫展角色从拍摄到后期调色的完整思路，可以看到摄影师怎样按角色定整体色调。
+  lessons:
+  - m5-06
+- id: m5-hb-brush-library
+  title: Procreate 使用手册：画笔库
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-library
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 画笔库的分组和每组画笔的用途，「着墨」「气笔修饰」在哪里找。
+  lessons: []
+- id: m5-hb-colors-ui
+  title: Procreate 使用手册：色彩界面（含吸管、色卡快填）
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 长按画布调出吸管、吸管上下半圈的含义、在当前图层和整张图之间切换取样。
+  lessons: []
+- id: m5-hb-palettes
+  title: Procreate 使用手册：色板（调色板）
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-palettes
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 创建色卡、从相机、文件、相片新增调色板的官方说明。
+  lessons: []
+- id: m5-hb-color-adjust
+  title: Procreate 使用手册：色彩调整（色相饱和度亮度、颜色平衡、曲线、渐变映射）
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 四个调色工具的界面说明，包括渐变映射的八个预设和自定义渐变的编辑方法。
+  lessons: []
+- id: m5-hb-layer-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 填充图层、阿尔法锁定、蒙版、剪辑蒙版、辅助绘图、向下合并等每一项的说明。
+  lessons: []
+- id: m5-hb-copypaste
+  title: Procreate 使用手册：拷贝并粘贴菜单
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/copypaste
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 三指下拖菜单里剪切、拷贝、全部拷贝、复制、剪切并粘贴、粘贴的区别。
+  lessons: []
+- id: m5-hb-perspective
+  title: Procreate 使用手册：透视指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guides-perspective
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 一点、两点、三点透视指引怎么放透视点，以及辅助绘图怎样让笔画贴合透视线。
+  lessons: []

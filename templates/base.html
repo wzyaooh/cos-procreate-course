@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% if title %}{{ title }} - {% endif %}{{ site_name }}</title>
+<meta name="description" content="{% block desc %}从零开始，用 iPad 和 Procreate 系统学习 cosplay 照片后期：精修、特效、合成。每节课都有讲解、找图要求和作业。{% endblock %}">
+<meta name="theme-color" content="#FFFDF5">
+{% set page_desc %}{{ self.desc() }}{% endset %}
+<meta property="og:site_name" content="{{ site_name }}">
+<meta property="og:type" content="{{ 'article' if here.startswith('/m') else 'website' }}">
+<meta property="og:title" content="{% if title %}{{ title }} - {% endif %}{{ site_name }}">
+<meta property="og:description" content="{{ page_desc|trim }}">
+<meta property="og:locale" content="zh_CN">
+{% if site_url %}<meta property="og:url" content="{{ site_url }}{{ here }}">
+<meta property="og:image" content="{{ site_url }}/static/icons/share-card.png">
+<link rel="canonical" href="{{ site_url }}{{ here }}">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+{% if not preview %}<link rel="manifest" href="/manifest.webmanifest">{% endif %}
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="cos后期自学">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="{{ u('/static/icons/apple-touch-icon.png') }}">
+{% if inline_css %}<style>{{ inline_css|safe }}</style>{% else %}<link rel="stylesheet" href="/static/css/site.css?v={{ ver }}">{% endif %}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ u('/static/icons/favicon-32.png') }}">
+<link rel="alternate icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='15' cy='15' r='12' fill='%23F472B6' stroke='%231E293B' stroke-width='3'/%3E%3C/svg%3E">
+</head>
+<body class="{% block bodyclass %}{% endblock %}" data-url="{{ here }}" data-depth="{{ depth }}">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ u('/') }}">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><b>张宇涵的cos后期</b><span>Procreate 自学站</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      {% set navs = [('/map/', '课程地图'), ('/problems/', '问题速查'), ('/resources/', '资料库'), ('/homework/', '作业'), ('/search/', '搜索')] %}
+      {% for href, label in navs %}
+      <a class="nav-link{% if here.startswith(href) %} is-current{% endif %}" href="{{ u(href) }}"{% if here.startswith(href) %} aria-current="page"{% endif %}>{{ label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+<main id="main" class="{% block mainclass %}page{% endblock %}">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><b>{{ site_name }}</b></p>
+    <p>学习进度只保存在这台设备的浏览器里。换设备前，去<a href="{{ u('/about/#backup') }}">使用说明</a>导出备份。</p>
+    <p><a href="{{ u('/about/') }}">使用说明</a>　<a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>　<a href="{{ u('/graduation/') }}">毕业作品</a></p>
+    <p>课程内容和示意图采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a> 许可，代码采用 MIT 许可。<a href="{{ repo_url }}" target="_blank" rel="noopener">源代码和问题反馈：GitHub</a></p>
+    <p>本站是非官方学习资料，与 Procreate、Adobe 等公司无关；示意图不是软件截图。课程里引用的视频和文章版权归原作者所有，本站只提供链接。</p>
+  </div>
+</footer>
+<div class="read-progress" aria-hidden="true"><i data-progress></i></div>
+<div class="fab" data-fab>
+  {% if toc %}<button class="fab-btn" type="button" data-toc-open aria-haspopup="dialog" aria-controls="toc-sheet"><span class="fab-label">目录</span><span class="fab-cur" data-cur-sec></span></button>{% endif %}
+  <button class="fab-btn fab-top" type="button" data-to-top aria-label="回到顶部" hidden>↑</button>
+</div>
+{% if toc %}
+<div class="toc-sheet" id="toc-sheet" role="dialog" aria-modal="true" aria-label="本页目录" hidden data-toc-sheet>
+  <div class="toc-sheet-panel">
+    <div class="toc-sheet-head"><b>本页目录</b><button class="btn btn-small" type="button" data-toc-close>关闭</button></div>
+    <ol class="toc-sheet-list">
+      {% for t in toc %}
+      <li><a href="#{{ t.id }}" data-toc-link>{{ t.name|safe }}</a>
+        {% if t.children %}<ol>{% for c in t.children %}<li><a href="#{{ c.id }}" data-toc-link>{{ c.name|safe }}</a></li>{% endfor %}</ol>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+{% endif %}
+{% block scripts %}{% endblock %}
+{% if inline_js %}<script>{{ inline_js|safe }}</script>{% else %}<script src="/static/js/site.js?v={{ ver }}" defer></script>{% endif %}
+</body>
+</html>

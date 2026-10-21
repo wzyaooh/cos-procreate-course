@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block desc %}{{ meta.summary or meta.title }}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>{{ meta.title }}</h1>
+  {% if meta.summary %}<p class="lead">{{ meta.summary }}</p>{% endif %}
+</div>
+<div class="prose prose-page{% if meta.wide %} prose-wide{% endif %}">{{ body|safe }}</div>
+{% endblock %}

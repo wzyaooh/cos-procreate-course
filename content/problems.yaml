@@ -1,0 +1,121 @@
+# 问题速查。有 file 的会生成单独的详细页面，其余只在列表页显示症状和要补的课。
+- slug: proportion
+  group: 形体
+  title: 比例崩了：头大身短、腿短
+  symptom: 人看起来矮、头显大、腿显短，和角色设定差很多。
+  lessons: [m3-04, m5-04]
+  file: proportion.md
+- slug: wide-angle
+  group: 形体
+  title: 广角脸变形、手脚变大
+  symptom: 脸中间被放大、两侧变窄，或者伸向镜头的手、脚、武器特别大；合影边上的人被拉宽。
+  lessons: [m3-06, m5-04]
+  file: wide-angle.md
+- slug: liquify-bend
+  group: 形体
+  title: 液化后背景弯了
+  symptom: 收完腰或手臂，旁边的门框、地砖、栏杆跟着弯了，一眼就能看出修过。
+  lessons: [m2-03, m5-04]
+  file: liquify-bend.md
+- slug: pose
+  group: 形体
+  title: 动作别扭、关节方向不对
+  symptom: 肩膀一高一低、手肘或膝盖的方向看着不自然，液化之后更怪。
+  lessons: [m3-05]
+  file: pose.md
+- slug: flat-face
+  group: 光影
+  title: 脸很平、没有立体感
+  symptom: 五官糊成一片，脸看起来又平又大。阴天或正面闪光灯拍的照片最常见。
+  lessons: [m3-01, m4-04]
+  file: flat-face.md
+- slug: plastic-skin
+  group: 光影
+  title: 修完成了塑料脸
+  symptom: 皮肤干净了，但没有任何质感，像磨砂塑料或者滤镜脸。
+  lessons: [m4-03]
+  file: plastic-skin.md
+- slug: messy-light
+  group: 光影
+  title: 阴阳脸、光影乱
+  symptom: 漫展现场灯光多，脸上一块亮一块暗，看不出主光从哪来。
+  lessons: [m3-01, m4-04]
+  file: messy-light.md
+- slug: dirty-skin
+  group: 色彩
+  title: 肤色发脏、发灰
+  symptom: 调完色以后皮肤发灰、发青或者发紫，看起来不健康。
+  lessons: [m3-03, m4-02]
+  file: dirty-skin.md
+- slug: color-cast
+  group: 色彩
+  title: 漫展灯光偏色
+  symptom: 整张照片偏黄、偏绿或偏青，白色的衣服也不白。
+  lessons: [m4-02]
+  file: color-cast.md
+- slug: character-color
+  group: 色彩
+  title: 假发或衣服颜色和角色不一样
+  symptom: 实物染色和官方设定有差别，比如假发偏粉、衣服偏暗。
+  lessons: [m5-06]
+  file: character-color.md
+- slug: wig-hair
+  group: cos 穿帮
+  title: 假发杂毛、露出真发
+  symptom: 头发边缘有飞出来的杂毛，鬓角或后颈露出真发或发网。
+  lessons: [m5-01]
+  file: wig-hair.md
+- slug: hairline
+  group: cos 穿帮
+  title: 发际线不贴、没有美人尖
+  symptom: 假发边缘浮起来、能看到贴片的边，或者角色有美人尖但照片里没有。
+  lessons: [m5-01]
+  file: hairline.md
+- slug: lens-glare
+  group: cos 穿帮
+  title: 美瞳反光、眼睛没神
+  symptom: 美瞳上有一大片反光，或者眼睛黑乎乎的没有眼神光。
+  lessons: [m5-02]
+  file: lens-glare.md
+- slug: folds
+  group: cos 穿帮
+  title: 衣服乱褶、道具接缝和胶痕
+  symptom: 衣服上有没熨平的死褶，道具上能看到拼接缝、胶痕或者线头。
+  lessons: [m5-03]
+  file: folds.md
+- slug: passersby
+  group: cos 穿帮
+  title: 背景有路人和灯架
+  symptom: 漫展场照背景里有路人、灯架、垃圾桶，抢了主体的注意力。
+  lessons: [m5-05]
+  file: passersby.md
+- slug: crop
+  group: 构图
+  title: 画面太挤、切在关节上
+  symptom: 人物顶天立地没有呼吸感，或者画面边缘正好切在手腕、膝盖、脚踝上。
+  lessons: [m3-07, m5-05]
+  file: crop.md
+- slug: pasted-fx
+  group: 特效合成
+  title: 特效像贴上去的
+  symptom: 光效、火焰很亮，但人物身上完全没被照亮，看起来和人不在一个空间。
+  lessons: [m6-05, m7-02]
+  file: pasted-fx.md
+- slug: white-edge
+  group: 特效合成
+  title: 抠图有白边
+  symptom: 换了背景以后，人物边缘一圈白边或黑边，头发边缘尤其明显。
+  lessons: [m2-05]
+  file: white-edge.md
+- slug: export-blur
+  group: 导出
+  title: 发到网上变糊或偏色
+  symptom: 在 iPad 上看很好，发到微博、小红书、B 站以后变糊，或者颜色变淡。
+  lessons: [m0-02, m8-03]
+  file: export-blur.md
+- slug: layer-limit
+  group: 导出
+  title: 图层不够用
+  symptom: 修到一半提示图层已达上限，新建不了图层。
+  lessons: [m0-01, m2-06]
+  file: layer-limit.md

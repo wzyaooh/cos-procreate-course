@@ -1,0 +1,8 @@
+# 本机设置（域名等），不要提交
+.env
+# 构建产物
+site/
+preview/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,711 @@
+- id: sspai-procreate-start
+  title: 送给每一位想在 iPad 上画画的人：Procreate 快速入门指南
+  url: https://sspai.com/post/58059
+  platform: 少数派
+  type: 文章
+  paid: false
+  lang: zh
+  why: 少数派的长文，把 Procreate 界面、手势、图层讲了一遍，适合装好软件后通读一次。
+  lessons:
+  - m0-01
+- id: sspai-ipados-photo
+  title: iPadOS 图片后期漫游指南
+  url: https://sspai.com/post/78033
+  platform: 少数派
+  type: 文章
+  paid: false
+  lang: zh
+  why: 作者在 iPad 上做后期的完整思路，包括 App 搭配、光效叠加和 Procreate 图层上限的实测。
+  lessons:
+  - m0-01
+  - m6-02
+- id: sspai-pixcake
+  title: iPad + 像素蛋糕，人像摄影不返废片指南
+  url: https://sspai.com/post/95251
+  platform: 少数派
+  type: 文章
+  paid: false
+  lang: zh
+  why: 介绍 iPad 版像素蛋糕的出图流程，适合想快速批量调色的人参考。
+  lessons:
+  - m0-01
+- id: sina-lr-mobile
+  title: 最强手机修图软件 Lightroom Mobile 基础教程
+  url: https://zhongce.sina.com.cn/article/view/51838/
+  platform: 新浪众测
+  type: 文章
+  paid: false
+  lang: zh
+  why: 逐个解释 Lightroom 手机版的面板和参数，重点看「直方图」和「影调」两部分。
+  lessons:
+  - m0-02
+  - m4-02
+- id: bili-post-100
+  title: 摄影后期教程 100 集（全）
+  url: https://www.bilibili.com/video/BV1Ah4y177Ui/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 前几集讲光影结构、修图思路和调色底层逻辑，后面是 ACR 面板，可以对照 Lightroom 手机版看。
+  lessons:
+  - m0-02
+  - m3-03
+  - m3-07
+- id: smzdm-cos-post
+  title: Cosplay 人像后期经验分享 & 内附 PS 人像修图技巧
+  url: https://post.smzdm.com/p/555961/
+  platform: 什么值得买
+  type: 文章
+  paid: false
+  lang: zh
+  why: 作者特别强调动手前先和 coser 沟通喜好，0.3 课主要参考这一部分。
+  lessons:
+  - m0-03
+- id: zhihu-good-cos-post
+  title: 如何成为一个优秀的 cosplay 后期？
+  url: https://www.zhihu.com/question/50476937
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 知乎问答，多位后期分享了 cos 修图和普通人像的区别、修图尺度怎么把握。
+  lessons:
+  - m0-03
+- id: procreate-beginners
+  title: Procreate 官方入门系列（Beginners Series）
+  url: https://education.procreate.com/beginners-series
+  platform: Procreate 官方
+  type: 视频
+  paid: false
+  lang: en
+  why: 官方出的 4 集入门视频加练习册，B 站搜「Procreate官方账号」有中文版。
+  lessons:
+  - m1-01
+- id: bishua-beginners-cn
+  title: Procreate 官方入门教程中文整理页
+  url: https://www.bishua.art/tutorial/308-procreate-tutorial-beginners-series.html
+  platform: 笔刷库网站
+  type: 文章
+  paid: false
+  lang: zh
+  why: 把官方入门系列按集整理成中文图文，不方便看视频时可以看这个。
+  lessons:
+  - m1-01
+- id: bili-aling-start
+  title: procreate 新手入门保姆级教程（阿零铃铃铃）
+  url: https://www.bilibili.com/video/BV1N7411b7dP/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 约 52 分钟，按新手买了软件之后的顺序讲，评论区口碑很好。
+  lessons:
+  - m1-01
+  - m1-03
+- id: zhihu-gesture-12
+  title: 'Procreate 迷你课堂 #12：捏合合并、多选图层手势快捷'
+  url: https://zhuanlan.zhihu.com/p/144206897
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '图文讲两个图层手势：两指按住一串图层往中间捏、一次合并，单指向右轻滑多选图层；1.2 课的手势表没列图层手势，1.4 课第 4 步「编组和合并」用的就是这两个。'
+  lessons:
+  - m1-02
+- id: hb-blend
+  title: Procreate 使用手册：混合模式
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-blend
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: '官方逐个列出 Procreate 全部混合模式的中文名和效果，看 PS 教程碰到模式名就来这里对名字（PS 的「叠加」这里叫「覆盖」）；可以和 1.4 课的混合模式总表对照着看。'
+  lessons:
+  - m1-04
+- id: zhihu-layers-1
+  title: procreate 之图层操作（一）
+  url: https://zhuanlan.zhihu.com/p/438790279
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '图文介绍图层面板上的每个部分（新增图层、缩略图、名称、混合模式、可见性勾选框、背景颜色），还讲了长按勾选框只显示这一层；对应 1.4 课第 1 步「认识图层面板」，2.6 课整理图层时也可以回看。'
+  lessons:
+  - m1-04
+- id: zhihu-layers-2
+  title: procreate 之图层操作（二）
+  url: https://zhuanlan.zhihu.com/p/439840303
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '参照官方手册把图层选项菜单逐项讲一遍（重命名、填充图层、阿尔法锁定、蒙版、剪辑蒙版、参考、向下合并、向下组合等）；对应 1.4 课第 2 步和 2.6 课第 2 步的命名习惯。'
+  lessons:
+  - m1-04
+- id: zhihu-procreate-start
+  title: Procreate 快速入门指南（知乎）
+  url: https://zhuanlan.zhihu.com/p/99582140
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '少数派《Procreate 快速入门指南》在知乎的转载（按 5.0 版写的），少数派打不开时看这份；1.5 课看「蒙版、剪辑蒙版、Alpha 锁定」一节（Alpha 锁定即阿尔法锁定），1.6 课看「选取与变形」，2.4 课看「调整」。'
+  lessons:
+  - m1-05
+  - m2-04
+- id: hb-mask
+  title: Procreate 使用手册：蒙版
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-mask
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: '官方说明阿尔法锁定、图层蒙版、剪辑蒙版各自怎么创建、编辑、移动和停用；1.5 课的三种方法以这页为准，后面课里加蒙版、建剪辑图层时也回这里查。'
+  lessons:
+  - m1-05
+- id: hb-selections
+  title: Procreate 使用手册：选取
+  url: https://help.procreate.com/cn/procreate/handbook/selections
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: '官方选取总页：自动、手绘、矩形和椭圆三类选取，以及界面手势、高级选取、设置几个子页的入口；对应 1.6 课第 1 步「四种选取」，后面课里选虹膜、选假发也按这页操作。'
+  lessons:
+  - m1-06
+- id: sspai-procreate-5x
+  title: iPad 老牌绘画工具大更新，补上后期处理功能短板：Procreate 5X
+  url: https://sspai.com/post/62838
+  platform: 少数派
+  type: 文章
+  paid: false
+  lang: zh
+  why: '介绍 Procreate 5X 新增的渐变映射、泛光、故障艺术、半色调、色像差和重新整理过的调整菜单；对应 2.1 课第 6 步渐变映射、2.4 课的滤镜和 6.1 课。文章写于 2020 年，界面细节以手册为准。'
+  lessons:
+  - m2-01
+  - m2-04
+  - m6-01
+- id: bili-filters
+  title: 【procreate】超实用的滤镜效果介绍
+  url: https://www.bilibili.com/video/BV1TL4y1v7Ro/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '1 分钟的短视频，快速演示 Procreate 里几种滤镜的效果和用法，学 2.1、2.4、6.1 课之前先看个大概；具体怎么调按课里的步骤来。'
+  lessons:
+  - m2-01
+- id: hb-clone
+  title: Procreate 使用手册：克隆
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-clone
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 克隆的取样圆盘怎么用、怎么锁定取样点，以及「画笔尺寸」「强度」两个滑块。
+  lessons:
+  - m2-02
+- id: creativity-city-clone
+  title: 'The Procreate Clone Tool: How to Clone in Procreate'
+  url: https://www.thecreativitycity.com/blogs/blogs/the-procreate-clone-tool-how-to-clone-in-procreate
+  platform: The Creativity City
+  type: 文章
+  paid: false
+  lang: en
+  why: '英文图文，讲克隆的取样圆盘怎么跟着笔走，并给了几条提示：只能克隆当前图层、圆盘大小不随画布缩放变化、长按圆盘锁定取样点；对应 2.2 课「克隆只在当前图层里取样」和第 3 步锁定圆盘。'
+  lessons:
+  - m2-02
+- id: hb-liquify
+  title: Procreate 使用手册：液化
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-liquify
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方说明液化的 6 种模式、「重建」和尺寸、压力、失真、动力四个滑块。
+  lessons:
+  - m2-03
+- id: yt-liquify
+  title: How to Use the Liquify Tool in Procreate
+  url: https://www.youtube.com/watch?v=TztJeOq2qKY
+  platform: YouTube
+  type: 视频
+  paid: false
+  lang: en
+  why: '约 7 分钟的英文视频，作者在 iPad 上演示 Procreate 液化工具怎么用；配合 2.3 课第 1～2 步的模式和滑块说明，看实际效果。'
+  lessons:
+  - m2-03
+- id: designbundles-liquify
+  title: How to Use the Liquify Tool in Procreate（Design Bundles）
+  url: https://designbundles.net/design-school/how-to-use-the-liquify-tool-in-procreate
+  platform: Design Bundles
+  type: 文章
+  paid: false
+  lang: en
+  why: '英文图文，逐个解释液化的各个模式，尺寸、压力、失真、动力四个滑块，以及「调整」「重置」两个按钮；对应 2.3 课「四个滑块」和第 4 步「推过头了，退回去」。'
+  lessons:
+  - m2-03
+- id: bili-cutout
+  title: 【procreate教程全程干货】如何用 procreate 抠图
+  url: https://www.bilibili.com/video/BV1N4411D7Hm/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '不到 1 分钟的 Procreate 抠图短片，先看一遍完整流程有个印象；阈值、修边、去白边这些细节按 2.5 课的步骤做。'
+  lessons:
+  - m2-05
+- id: zhihu-sketch-light
+  title: 素描自学入门：素描三大面五大调 物体的明暗规律
+  url: https://zhuanlan.zhihu.com/p/34363060
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '素描入门文章，讲三大面（亮面、灰面、暗面）和五大调，并提醒暗部反光不能亮过亮部的灰调；对应 3.1 课「三大面」「五大调」和「为什么反光不能比灰面亮」，4.4 课画面部光影前也可以复习。'
+  lessons:
+  - m3-01
+- id: zcool-light
+  title: 什么是三大面五大调？一篇文章看懂三大面五大调
+  url: https://www.zcool.com.cn/article/ZMTE4NzY1Mg==.html
+  platform: 站酷
+  type: 文章
+  paid: false
+  lang: zh
+  why: '站酷上的素描基础文，讲三大面、五大调各指哪里，还指出液体、玻璃、金属这类材质不按这个规律走；和 3.1 课第 1 步「在鸡蛋上标出五大调」对照着看。'
+  lessons:
+  - m3-01
+- id: bili-color-basic
+  title: 三分钟改变你的色调混乱：色彩基础扫盲
+  url: https://www.bilibili.com/video/BV1wG7V6WEpC/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 3 分钟，作者色彩基础系列的第一节，从原理讲起；适合在 3.2 课「先弄懂：颜色是怎么描述的」之前先看一遍。'
+  lessons:
+  - m3-02
+- id: bili-color-theory
+  title: 调色的终极秘籍【色彩理论】
+  url: https://www.bilibili.com/video/BV1mm421g7is/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 11 分钟，从摄影的角度讲色彩怎么搭配、怎么运用、怎么管理；对应 3.2 课「五种配色关系」和「三条配色法则」，5.6 课定角色氛围色时也可以回看。'
+  lessons:
+  - m3-02
+  - m5-06
+- id: chu-color-course
+  title: 储卫民《给摄影爱好者的色彩课》介绍
+  url: https://www.sohu.com/a/671849975_121124433
+  platform: 搜狐
+  type: 文章
+  paid: false
+  lang: zh
+  why: 介绍文章。课程本身在 B 站更新，40 多课时，适合想系统深入学色彩的人。
+  lessons:
+  - m3-02
+  - m5-06
+- id: hb-harmony
+  title: Procreate 使用手册：色彩调和
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-harmony
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: '官方说明「色彩调和」的五种模式（互补、补色分割、近似、三等分、矩形）和怎么在色盘上拖小圆圈选色；对应 3.2 课第 3 步「用色彩调和看互补色在哪」。'
+  lessons:
+  - m3-02
+- id: csdn-skin
+  title: B站教程：精通磨皮与五官精修技巧（学习笔记）
+  url: https://blog.csdn.net/ronvicki/article/details/122898603
+  platform: CSDN
+  type: 文章
+  paid: false
+  lang: zh
+  why: '一份 PS 人像精修课的学习笔记，记了污点修复、仿制图章、中性灰、肤色统一等步骤；PS 工具名可在本站「PS 和 Procreate 对照表」查到对应，3.3 课对照肤色统一的思路，4.3 课对照去瑕疵的顺序。'
+  lessons:
+  - m3-03
+  - m4-03
+- id: bili-krenz-proportion
+  title: 【Krenz】绘画干货：人体通用比例
+  url: https://www.bilibili.com/video/BV1y4411578b/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: Krenz 官方账号发布，收藏 20 万以上。讲清楚头身比和身体的关键分界点，修比例之前先看。
+  lessons:
+  - m3-04
+  - m5-04
+- id: zhihu-proportion
+  title: 为什么人物总是画不好？人体比例了解一下
+  url: https://zhuanlan.zhihu.com/p/38838878
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 图文版人体比例常识，列出了不同年龄段的常见头身比。
+  lessons:
+  - m3-04
+- id: zhihu-anatomy-books
+  title: 绘画优秀教程书籍推荐：人体篇
+  url: https://zhuanlan.zhihu.com/p/125529266
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: '知乎书单，介绍《动态素描：着衣人体》《伯里曼人体结构》《人体绘画：设计与创造》《艺用人体解剖》等人体结构书，以及各自适合什么阶段；3.5 课之后想系统学骨点和体块时按它挑书。'
+  lessons:
+  - m3-05
+- id: bili-krenz-perspective
+  title: 台湾 krenz 大师人体结构透视教程（转载）
+  url: https://www.bilibili.com/video/av2416803/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 'Krenz 人体结构透视课的转载，约 1 小时 46 分钟；对应 3.6 课「近大远小」和「一点、两点、三点透视」，想弄懂身体在透视里怎么变化时挑相关段落看。'
+  lessons:
+  - m3-06
+- id: sohu-lens-distortion
+  title: 镜头焦段畸变控制：避免人脸变形、景物扭曲
+  url: https://m.sohu.com/a/1042362804_122903823
+  platform: 搜狐
+  type: 文章
+  paid: false
+  lang: zh
+  why: 解释为什么广角近拍会让脸变形，以及拍摄距离和焦段的关系。
+  lessons:
+  - m3-06
+- id: baike-perspective-distortion
+  title: 透视畸变（百度百科）
+  url: https://baike.baidu.com/item/%E9%80%8F%E8%A7%86%E7%95%B8%E5%8F%98/228760
+  platform: 百度百科
+  type: 文章
+  paid: false
+  lang: zh
+  why: '百科词条，解释透视畸变的成因（被摄物各部分离镜头远近不同，投影比例失真，广角近拍时鼻子被放大）以及怎么避免、怎么矫正；对应 3.6 课「透视畸变：离镜头近的部位被放大」。'
+  lessons:
+  - m3-06
+- id: bili-lr-10
+  title: 【Lr】Lightroom 入门基础教学，10 集精讲课程
+  url: https://www.bilibili.com/video/BV1KW4y1F7Pd/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 10 集系统讲 Lightroom 的调光调色面板。电脑版界面，但参数和手机版基本一致。
+  lessons:
+  - m4-02
+- id: bili-lr-mobile-easy
+  title: 新手修图没思路？超简易手机调色教程（Lightroom 手机版）
+  url: https://www.bilibili.com/video/BV1Ro4y197Gy/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 7 分钟，作者用 Lightroom 手机版直接演示一张照片的调色套路；对应 4.2 课第 2～3 步，看完再按课里的顺序自己调。'
+  lessons:
+  - m4-02
+- id: yt-procreate-skin
+  title: Procreate Tutorial 32. How to retouch the skin in a photo
+  url: https://www.youtube.com/watch?v=XJYl0fn5Jos
+  platform: YouTube
+  type: 视频
+  paid: false
+  lang: en
+  why: '约 10 分钟的英文视频，作者直接在 Procreate 里修一张照片的皮肤；可以和 4.3 课第 1～2 步（克隆去瑕疵、低透明度补肤色）对照，看别人怎么下笔。'
+  lessons:
+  - m4-03
+- id: tuts-retouch
+  title: Photoshop Retouching for Beginners（免费，约 51 分钟）
+  url: https://design.tutsplus.com/photoshop-retouching-for-beginners--ytc-27c
+  platform: Envato Tuts+
+  type: 文章
+  paid: false
+  lang: en
+  why: 'Envato Tuts+ 的免费 PS 修图课（约 51 分钟），分皮肤（高低频、加深减淡）、头发、妆面、背景几部分；4.3 课看皮肤部分，配合「PS 的高低频是什么，Procreate 为什么做不了」理解，4.5 课看妆面部分的眼妆和修容腮红。'
+  lessons:
+  - m4-03
+  - m4-05
+- id: zhihu-neutral-gray
+  title: 人像精修：中性灰光影
+  url: https://zhuanlan.zhihu.com/p/31871957
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 'PS 中性灰修光影的经典做法：新建图层填中性灰、设成柔光，配合黑白观察组找出明暗不匀的地方；对应 4.4 课第 1～2 步（建中性灰层、改柔光）和「为什么要开着灰度观察层涂」。'
+  lessons:
+  - m4-04
+- id: zhihu-light-reshape
+  title: 实力讲解光影重塑 + 色彩统一
+  url: https://zhuanlan.zhihu.com/p/34623840
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 'PS 光影重塑加色彩统一的案例：先转黑白分析哪里该亮、哪里该暗，重塑光影，再统一肤色；需要一点修图基础，适合做完 4.4 课后看「面部光影地图」怎么用到整张图上。'
+  lessons:
+  - m4-04
+- id: bili-eyes
+  title: 【cos后期教程】眼睛无神？眼球太小？教你画美瞳（换瞳色、补妆）
+  url: https://www.bilibili.com/video/BV1Ap4y1r76r/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 'PS 教程，P1（约 7 分钟）演示给没戴美瞳的眼睛画美瞳、换瞳色，P2 是录完以后的花絮；思路对应 5.2 课第 3 步「换瞳色」，4.5 课补妆时也可以参考。'
+  lessons:
+  - m4-05
+  - m5-02
+- id: bili-wig
+  title: 【cos后期】后期改发型｜论假发的重要性
+  url: https://www.bilibili.com/video/BV1sm4y1S7Z5/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 3 分半的 cos 后期过程分享，作者在后期里改假发发型；对应 5.1 课第 7 步「改发型轮廓」，看改完的轮廓怎样贴近角色。'
+  lessons:
+  - m5-01
+- id: bili-cos-series
+  title: 【cos后期教程】精修图片过程全程讲解（系列）
+  url: https://www.bilibili.com/video/BV1Q7411Y7mm/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 16 分钟，用 PS 演示一张 cos 照片的精修全过程，包括去杂毛、液化、补妆；4.5 课看补妆，5.1 课看去杂毛，5.5 课参考整张图的修图顺序。'
+  lessons:
+  - m5-01
+  - m5-05
+- id: leadcc-lens
+  title: Cosplay 修图怎么处理美瞳反光？
+  url: https://www.lead-cc.com/cos/144.html
+  platform: 呈森摄影工坊
+  type: 文章
+  paid: false
+  lang: zh
+  why: '讲美瞳反光为什么会出现、哪些反光该去哪些该留，以及别把眼神光一起修掉；作者用的是 PS 的修复画笔和仿制图章（Procreate 里用克隆），对应 5.2 课第 2 步「去掉美瞳上的反光雾」和「为什么一定要留主眼神光」。'
+  lessons:
+  - m5-02
+- id: tuding-folds
+  title: 服装平铺图与挂拍图怎么修：去褶皱、正颜色、换背景
+  url: https://tudingai.cn/blog/202606/apparel-flat-lay-retouch-wrinkle-color-bg/
+  platform: 图叮 AI 博客
+  type: 文章
+  paid: false
+  lang: zh
+  why: '电商服装修图文章，只看第一步「先分清该去和不该去的褶」：拍摄时没整理好的杂褶该去，面料本身的结构褶要留；对应 5.3 课「三种褶：留哪些、去哪些」，文中 AI 工具的部分可以跳过。'
+  lessons:
+  - m5-03
+- id: bili-cos-flow
+  title: 【cos后期】场照后期怎么修？保姆级漫展场照后期教程（阡夜陌）
+  url: https://www.bilibili.com/video/BV1744y1F7G1/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 约 8 分钟，从一张漫展场照讲到成片，用的是电脑软件，但拿到场照先看什么、按什么顺序修的思路可以直接照搬。原来收录的合集视频已失效，2026 年 10 月换成这一条。
+  lessons:
+  - m5-03
+  - m5-05
+  - m7-03
+- id: pixcake-reshape
+  title: 身体美型修图教程：瘦身、增高、天鹅颈、直角肩、瘦手臂、瘦腿
+  url: https://www.pixpretty.com/portrait-retouching-tips/reshaping.html
+  platform: 像素蛋糕官网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 像素蛋糕官网的图文教程。软件不同，但"整体比例优先、少量多次"的思路通用。
+  lessons:
+  - m5-04
+- id: zhihu-liquify-4
+  title: PS 修图神技！4 个隐藏的液化技巧
+  url: https://zhuanlan.zhihu.com/p/126495270
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: PS 教程。重点看"保留骨点转折"和"局部修完要回到整体看"这两条。
+  lessons:
+  - m5-04
+- id: fstoppers-liquify
+  title: Avoid Bending the Scene When Liquifying Portraits in Photoshop
+  url: https://fstoppers.com/originals/avoid-bending-scene-when-liquifying-portraits-photoshop-543795
+  platform: Fstoppers
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。专讲液化把背景推弯了怎么补救，思路在 Procreate 里一样适用。
+  lessons:
+  - m5-04
+- id: hb-bloom
+  title: Procreate 使用手册：泛光
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/bloom
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: '官方说明泛光的过渡、尺寸、燃烧三个滑块和触摸控制；对应 6.1 课第 1 步「调程度和三个滑块」。'
+  lessons:
+  - m6-01
+- id: zhihu-glow
+  title: procreate 教程发光特效｜如何让你的作品绿得发亮
+  url: https://zhuanlan.zhihu.com/p/120349104
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 'Procreate 发光的一种做法：新建一层填黑色、改成「滤色」，再用软边画笔在上面加光；和 6.3 课「发光为什么要分三层」对照，本站用「添加」叠三层，可以比较两种思路。文末的笔刷福利可以忽略。'
+  lessons:
+  - m6-03
+- id: getai-tyndall
+  title: procreate 插画丁达尔光效怎么画？
+  url: https://www.96p.net/jiaocheng/procreate/9872.html
+  platform: GetAI 社区
+  type: 文章
+  paid: false
+  lang: zh
+  why: '图文步骤：复制背景层、把饱和度降到最低、用曲线只留最亮的部分、改成「添加」再加透视模糊拉出光束；和 6.3 课「丁达尔光」的三张步骤卡一一对应。'
+  lessons:
+  - m6-03
+- id: getai-glow-brush
+  title: procreate 自带的发光笔刷哪些好用？
+  url: https://www.96p.net/jiaocheng/procreate/8536.html
+  platform: GetAI 社区
+  type: 文章
+  paid: false
+  lang: zh
+  why: '介绍画笔库里「亮度」组在哪，以及闪光、浅色画笔、星云几支自带笔刷各适合画什么；对应 6.4 课第 5 步，用「闪光」加光粒子。'
+  lessons:
+  - m6-04
+- id: yiihuu-composite
+  title: 揭秘 Cosplay 创意人像合成术【高级技法应用】（白鹤）
+  url: https://www.yiihuu.com/a_8639.html
+  platform: 翼狐网
+  type: 课程
+  paid: true
+  lang: zh
+  why: 付费课。系统讲合成时清晰度、光影、透视、色彩、景深怎么和背景对上。
+  lessons:
+  - m6-05
+  - m7-02
+- id: bili-composite
+  title: 【cos后期教程】抠图换背景 + 合成 + 特效 + 调色 无敌详细讲解版
+  url: https://www.bilibili.com/video/BV1pV411U7YA/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '约 14 分钟，用 PS 演示一张 cos 照从抠图换背景、合成、加特效到调色的完整过程；7.1 课先看抠图换背景这一段，后面的合成和调色可以拿 7.2 课的检查表对照。'
+  lessons:
+  - m7-01
+- id: bili-composite-baihe
+  title: 【PS】揭秘 Cosplay 创意人像合成术（B 站版）
+  url: https://www.bilibili.com/video/av74127880/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: '翼狐网《揭秘 Cosplay 创意人像合成术》付费课在 B 站的宣传片，只有 1 分半，不是完整教程；能看到这套课讲合成的整体框架，完整内容见翼狐网的付费课条目。'
+  lessons:
+  - m7-02
+- id: cosplayreal-blend
+  title: How to Blend Your Cosplay Into Epic Digital Backgrounds
+  url: https://www.cosplayreal.com/blogs/anime-exhibition/how-to-blend-your-cosplay-into-epic-digital-backgrounds
+  platform: CosplayReal
+  type: 文章
+  paid: false
+  lang: en
+  why: '英文，cos 服装店博客上的合成指南：抠图、让人物和背景的光线逻辑一致、用 50% 灰的叠加图层加深减淡、用 LUT 或渐变映射统一颜色；对应 7.2 课「光源方向」和「色彩」两项。PS 的「叠加」在 Procreate 叫「覆盖」，文中有商品推广。'
+  lessons:
+  - m7-02
+- id: yt-blender-composite
+  title: 'COSPLAY EDITING TUTORIAL: Blender, Lightroom, Procreate'
+  url: https://www.youtube.com/watch?v=OfZ5bK7wB-0
+  platform: YouTube
+  type: 视频
+  paid: false
+  lang: en
+  why: '约 7 分钟的英文视频，coser 用 Blender 做背景、Lightroom 调色、Procreate 合成精修；对应 7.4 课第 2～4 步，看背景、调色和合成怎么分给不同的软件做。'
+  lessons:
+  - m7-04
+- id: yt-nella-procreate
+  title: How I edit my Cosplay photos using Procreate!
+  url: https://www.youtube.com/watch?v=-m21U95a8ng
+  platform: YouTube
+  type: 视频
+  paid: false
+  lang: en
+  why: coser 本人用 Procreate 修自己照片的全过程，和本站思路最接近。
+  lessons:
+  - m7-04
+- id: hb-new-canvas
+  title: Procreate 使用手册：新建画布
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-create
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 自定义画布的尺寸、颜色配置，以及在哪里看「最大图层数」。
+  lessons: []
+- id: hb-import-share
+  title: Procreate 使用手册：导入与分享
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-import-share
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 从「照片」和「文件」导入图片、导出分享的官方说明。
+  lessons: []
+- id: hb-color-profiles
+  title: Procreate 使用手册：颜色配置
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-profiles
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: sRGB 和 P3 有什么区别，画布的颜色配置在哪里改。
+  lessons: []
+- id: hb-preferences
+  title: Procreate 使用手册：偏好设置
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-preferences
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 压力与平滑度、手势控制（包括「禁用触摸操作」）的官方说明。
+  lessons: []
+- id: hb-canvas
+  title: Procreate 使用手册：画布
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-canvas
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 裁剪并调整大小、水平翻转画布、参考窗口、画布信息都在这一页。
+  lessons: []
+- id: hb-transform
+  title: Procreate 使用手册：变换工具
+  url: https://help.procreate.com/cn/procreate/handbook/transform
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 自由变换、等比、扭曲、弯曲四种模式，以及「对齐」和「插值」设置。
+  lessons: []
+- id: hb-guides-2d
+  title: Procreate 使用手册：2D 网格
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guides-2D
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 打开和调整 2D 网格的方法，修比例时拿它当直线参照。
+  lessons: []

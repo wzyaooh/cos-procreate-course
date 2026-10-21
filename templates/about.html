@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>使用说明</h1>
+  <p class="lead">这个网站怎么用、作业用的照片去哪找、学习进度怎么备份。</p>
+</div>
+<div class="prose prose-page">
+  <h2 id="how">学习方法</h2>
+  <p>看 PS 教程时找不到对应功能，查 <a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>。学完全部课程以后，做<a href="{{ u('/graduation/') }}">毕业作品</a>。</p>
+  <ol>
+    <li><b>按顺序学。</b>M0 到 M2 是工具，M3 是理论，M4 以后是实战。M3 可以和 M4、M5 交替学。</li>
+    <li><b>每课都做作业。</b>作业写了验收标准，达到了再往下学。</li>
+    <li><b>记一本错题本。</b>每修一张图，记下哪里崩了、对应哪个知识点。一个月翻一次，哪类问题最多，就回去补哪节课。</li>
+    <li><b>留好过程文件。</b>每次都保存 .procreate 分层文件和修图前后对比，方便回头看自己是怎么修的。</li>
+  </ol>
+
+  <h2 id="numbers">课程里的数字怎么用</h2>
+  <p>课里的数字分三类，用法不一样：</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>类型</th><th>例子</th><th>怎么用</th></tr></thead>
+    <tbody>
+      <tr><td>有出处的</td><td>打印按 300 DPI 算、发到网上用 sRGB、软件的默认值、平台的上传规定</td><td>可以照着用。出处写在旁边或本课的参考资料里；平台规定会变，以平台最新说明为准</td></tr>
+      <tr><td>算出来的</td><td>头被放大多少倍、取色器的 HSB 换成 RGB、头身比</td><td>课里写了算法，你可以用自己的照片照着算一遍</td></tr>
+      <tr><td>经验起点值</td><td>模糊、液化、不透明度、羽化、笔刷尺寸的百分比</td><td>只是起点：从写的数左右开始，看到课里写的效果就停。同一个百分比在不同尺寸的画布上效果不一样，不要照抄数字</td></tr>
+    </tbody>
+  </table></div>
+  <p>案例里的具体读数（比如"取样 H24 S34 B88""色温 −15"）是那张示范照片的，你的照片数值会不同，按取色读数和画面判断。</p>
+
+  <h2 id="photos">找图清单</h2>
+  <p>网站不提供练习图，作业用的照片需要你自己找。可以从这些地方找：</p>
+  <ul>
+    <li><b>自己的返图</b>：最推荐，修完还能直接用。</li>
+    <li><b>朋友或合作 coser 的照片</b>：先问过本人；修好的图要发布，也要对方同意。</li>
+    <li><b>免版权图库</b>：<a href="https://unsplash.com/s/photos/cosplay" target="_blank" rel="noopener">Unsplash</a>、<a href="https://www.pexels.com/search/cosplay/" target="_blank" rel="noopener">Pexels</a>、<a href="https://commons.wikimedia.org/wiki/Category:Cosplay" target="_blank" rel="noopener">Wikimedia Commons</a>。用之前看一眼授权条款，Commons 上的图大多要求署名。</li>
+    <li><b>网上别人的作品</b>：可以拿来练手，但不要发布你修改后的版本。</li>
+  </ul>
+  <p>下面这些类型的照片，攒齐了基本能覆盖全部作业：</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>照片类型</th><th>用在哪些课</th></tr></thead>
+    <tbody>
+    {% for row in photo_list %}
+      <tr><td>{{ row.kind }}</td><td>{% for lid in row.lessons %}<a href="{{ lu(lid) }}#find">{{ lessons[lid].no }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+  <p>比例尺、三分线、透视线这类辅助线不用下载模板，用 Procreate 自带的 <span class="path"><kbd>操作</kbd><kbd>画布</kbd><kbd>绘图指引</kbd></span> 画，课程里会教具体设置。</p>
+
+  <h2 id="home-screen">在 iPad 上添加到主屏幕</h2>
+  <p>进度存在浏览器里。iPad 上的 Safari 有一条规则：如果连续 7 天用 Safari 却没打开过某个网站，可能会清掉这个网站存的数据（<a href="https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/" target="_blank" rel="noopener">WebKit 官方说明</a>）。添加到主屏幕后从图标打开，不受这条规则影响，而且没有地址栏，看课更宽。</p>
+  <ol>
+    <li>用 Safari 打开本站首页。</li>
+    <li>点地址栏旁边的「分享」按钮（方框加向上箭头）。</li>
+    <li>往下找到「添加到主屏幕」，点「添加」。</li>
+    <li>以后从主屏幕上的粉色圆形图标打开。</li>
+  </ol>
+  <p>注意：主屏幕上的网站和 Safari 里的网站，进度是分开存的。已经在 Safari 里学了一段的，先在下面导出进度，再从主屏幕图标打开、导入。</p>
+
+  <h2 id="feedback">发现错误怎么办</h2>
+  <p>课程按 Procreate 官方中文手册编写，但界面会随版本更新变化。发现某一步和你的 iPad 对不上、数字有问题、链接失效，欢迎到 <a href="{{ repo_url }}/issues/new/choose" target="_blank" rel="noopener">GitHub Issues</a> 反馈，写清楚是哪一课哪一步、你的 Procreate 版本。也可以直接修改课程文件提交 Pull Request，写法见仓库里的 CONTRIBUTING.md。</p>
+
+  <h2 id="backup">备份学习进度</h2>
+  <p>完成的课、作业和自检清单都记在这台设备的浏览器里。清除浏览器数据、换设备或换浏览器，进度都会丢。建议每两周导出一次，导出的文件存到「文件」App 的 iCloud 云盘里。</p>
+  <p class="backup-last" data-backup-last></p>
+  <div class="backup">
+    <button class="btn" type="button" data-export>导出进度文件</button>
+    <label class="btn">导入进度文件<input type="file" accept="application/json,.json" data-import hidden></label>
+    <button class="btn btn-ghost" type="button" data-reset>清空进度</button>
+  </div>
+  <p class="backup-msg" role="status" data-backup-msg></p>
+</div>
+{% endblock %}

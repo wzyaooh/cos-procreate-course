@@ -1,0 +1,36 @@
+name: 和真机界面对不上
+description: 课程里的按钮、菜单、名称和你 iPad 上的 Procreate / Lightroom 不一样
+title: "[界面] "
+labels: ["界面核对"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: 哪一课哪一步
+      description: 直接贴网页地址，比如 https://cos.llmunify.com/m5/04/#legs
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: 软件和版本
+      description: 比如 Procreate 5.4.2（操作 › 帮助 › 关于 Procreate）；Lightroom 写 App 设置里的版本
+    validations:
+      required: true
+  - type: input
+    id: ipados
+    attributes:
+      label: iPad 型号和 iPadOS 版本
+  - type: textarea
+    id: course
+    attributes:
+      label: 课程里写的是
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际界面是
+      description: 最好附截图
+    validations:
+      required: true

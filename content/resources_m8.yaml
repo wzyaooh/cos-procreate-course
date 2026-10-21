@@ -1,0 +1,197 @@
+- id: m8-sina-mimic
+  title: 不用求别人给滤镜了，教你如何模仿大师调色！
+  url: https://t.cj.sina.com.cn/articles/view/5720266525/154f4571d01902bayc
+  platform: 新浪财经
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲怎么分析参考图的影调和主色、再一步步仿出来，思路和本课的拆解表一致，可以对照着看。
+  lessons:
+  - m8-01
+- id: m8-zhihu-color-consistent
+  title: 一组人像摄影照片，后期如何做到调色色调一致？
+  url: https://zhuanlan.zhihu.com/p/356395022
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 专讲一组照片怎么调成同一个色调，和本课"先拉齐曝光白平衡、再套同一预设"的做法可以互相印证。
+  lessons:
+  - m8-02
+- id: m8-adobe-preset-create
+  title: 移动版 Lightroom：创建、更新和删除预设
+  url: https://helpx.adobe.com/cn/lightroom/mobile/work-with-presets/create-update-delete-presets.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方的创建预设步骤：预设名称、预设组、「已修改」，以及为什么建议不存「亮度」组；也讲了怎么用当前设置更新预设。
+  lessons:
+  - m8-02
+- id: m8-adobe-preset-apply
+  title: 移动版 Lightroom：将预设应用于照片
+  url: https://helpx.adobe.com/cn/lightroom/mobile/work-with-presets/apply-presets.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 应用预设、用「数量」滑块调强弱，以及预设面板里各个类别是什么。
+  lessons:
+  - m8-02
+- id: m8-adobe-color
+  title: 移动版 Lightroom：调整颜色
+  url: https://helpx.adobe.com/cn/lightroom/mobile/adjust-light-and-color/adjust-colors.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 白平衡、颜色混合和颜色分级（阴影、中间色调、高光、全局）的官方说明，复刻分离色调时查这一页。
+  lessons:
+  - m8-01
+  - m8-02
+- id: m8-adobe-export
+  title: 移动版 Lightroom：以多种格式导出照片
+  url: https://helpx.adobe.com/cn/lightroom/mobile/share-save-and-export/export-photos-in-multiple-formats.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 「导出为」里的文件类型、尺寸（最大可用尺寸、小、自定义）和质量设置。
+  lessons:
+  - m8-03
+- id: m8-hb-colors-value
+  title: Procreate 使用手册：值
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-value
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 颜色面板「值」里的色相、饱和度、亮度和十六进制色码，取色读数用的就是这里。
+  lessons:
+  - m8-01
+- id: m8-hb-palettes
+  title: Procreate 使用手册：色板
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-palettes
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 新建调色板、从相片或文件捕获调色板、删除和重排色卡、设为默认调色板。
+  lessons:
+  - m8-02
+- id: m8-hb-brush-library
+  title: Procreate 使用手册：笔库
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-library
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 创建画笔组合、拖动时"拷贝"和"移动"的区别、重置画笔、分享 .brushset。
+  lessons:
+  - m8-02
+- id: m8-hb-layers-organize
+  title: Procreate 使用手册：整理图层
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 向右轻滑选中多个图层、编成组、展开收起组，做模板文件时要用。
+  lessons:
+  - m8-02
+- id: m8-hb-gallery-organize
+  title: Procreate 使用手册：整理作品
+  url: https://help.procreate.com/cn/procreate/handbook/gallery/gallery-organize
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 图库里复制作品、批量选择、建「堆」，用来管理模板和作品集副本。
+  lessons:
+  - m8-02
+  - m8-03
+  - m8-04
+- id: m8-hb-color-adjust
+  title: Procreate 使用手册：色彩调整
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 曲线、颜色平衡和渐变映射，包括怎么新建、命名和保存自定义渐变。
+  lessons:
+  - m8-02
+- id: m8-hb-add
+  title: Procreate 使用手册：添加
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-add
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 插入照片、插入文件和添加文本的位置，做拆解板、对比图、模板都会用到。
+  lessons:
+  - m8-01
+  - m8-02
+  - m8-03
+- id: m8-hb-text
+  title: Procreate 使用手册：文本界面
+  url: https://help.procreate.com/cn/procreate/handbook/text/text-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 添加文本、编辑样式、移动和缩放文本框，用来写标注和水印。
+  lessons:
+  - m8-03
+  - m8-04
+- id: m8-hb-share
+  title: Procreate 使用手册：分享
+  url: https://help.procreate.com/cn/procreate/handbook/actions/actions-share
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: Procreate、PSD、JPEG、PNG、TIFF 各自保留什么，交付时选格式看这一页。
+  lessons:
+  - m8-03
+  - m8-04
+- id: m8-weibo-compress
+  title: 微博客服：为什么微博发布的图片没有"查看原图"选项
+  url: https://kefu.weibo.com/faqdetail?id=21265
+  platform: 微博官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方说明的图片压缩规则（单张超过 30M 会被压缩）和"查看原图"什么时候才有。
+  lessons:
+  - m8-03
+- id: m8-lofter-guide
+  title: LOFTER 使用指南
+  url: https://i.lofter.com/tag/LOFTER%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97
+  platform: LOFTER 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: LOFTER 官方博客的使用指南合集，里面有图片发布器的上传张数和尺寸说明，以及水印、作品保护设置。发布时间较早，以现在的帮助中心为准。
+  lessons:
+  - m8-03
+- id: m8-zhihu-retouch-quote
+  title: 这样报价，接私活修照片才不会吃亏！
+  url: https://zhuanlan.zhihu.com/p/37339129
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 修图师写的接私活报价经验，讲怎么根据需求和自己的意愿报价，可以对照本课的报价拆分来看。
+  lessons:
+  - m8-04
+- id: m8-zhihu-commission
+  title: 约稿出事了只能挂人？到底怎样约稿/接稿才不踩雷？
+  url: https://zhuanlan.zhihu.com/p/431587878
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 讲约稿双方怎么事先约定修改次数、验收标准和付款，虽然写的是画稿，规则同样适用于修图接单。
+  lessons:
+  - m8-04

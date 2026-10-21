@@ -1,0 +1,9 @@
+- id: v4m8-lofter-beginner
+  title: LOFTER 新手教程与社区规范
+  url: https://www.lofter.com/beginnercourse
+  platform: LOFTER 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: LOFTER 现行的官方新手教程，讲手机和网页版从哪里发图、怎么加标签。页面里没有写图片尺寸和张数限制（2026 年 10 月查询），所以 8.3 课表里的数字仍以较早的使用指南为出处、发布时以界面提示为准。
+  lessons: [m8-03]

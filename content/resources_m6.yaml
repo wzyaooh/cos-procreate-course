@@ -1,0 +1,199 @@
+# M6 特效和氛围 新增资料。手册页 id 里带 -m6 的，是其他模块也可能用到的通用页面，合并时如有重复可以统一成一个 id。
+- id: hb-chromatic
+  title: Procreate 使用手册：色像差
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/chromatic-aberration
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 透视和移动两种模式，焦点、过渡、掉落、模糊、透明度各管什么。
+  lessons: [m6-01]
+- id: hb-glitch
+  title: Procreate 使用手册：故障艺术
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-glitch
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 伪影、波浪、信号、发散四种效果和每种的滑块说明。
+  lessons: [m6-01]
+- id: hb-halftone
+  title: Procreate 使用手册：半色调
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/halftone
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 全彩、丝印、报纸三种网点效果。
+  lessons: [m6-01]
+- id: hb-color-adjust-m6
+  title: Procreate 使用手册：色彩调整（含渐变映射）
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-color
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 渐变映射的渐变色库、自定义色点；还有色相饱和度亮度和曲线，做丁达尔光时也用到。
+  lessons: [m6-01, m6-03]
+- id: hb-blur-m6
+  title: Procreate 使用手册：模糊
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-blur
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 高斯模糊、动态模糊、透视模糊（位置和方向两种模式）的官方说明。
+  lessons: [m6-02, m6-03, m6-04]
+- id: hb-symmetry-m6
+  title: Procreate 使用手册：对称指引
+  url: https://help.procreate.com/cn/procreate/handbook/guides/guides-symmetry
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 垂直、水平、四象限、径向四种对称，轴向对称和辅助绘图开关。
+  lessons: [m6-03, m6-04]
+- id: hb-quickshape-m6
+  title: Procreate 使用手册：速创形状
+  url: https://help.procreate.com/cn/procreate/handbook/guides/quickshape
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 画完停住变成直线、椭圆，另一指轻点变正圆，编辑形状。
+  lessons: [m6-02, m6-03]
+- id: hb-brush-library-m6
+  title: Procreate 使用手册：画笔库
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-library
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 自带画笔组（包括「亮度」）介绍，以及创建新笔刷、复制、重命名画笔。
+  lessons: [m6-02, m6-04]
+- id: hb-brush-studio-m6
+  title: Procreate 使用手册：画笔工作室设置
+  url: https://help.procreate.com/cn/procreate/handbook/brushes/brush-studio-settings
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 间距、抖动、散布、个数、形状来源、颗粒、动态抖动等每个参数的官方解释。
+  lessons: [m6-04]
+- id: hb-layers-options-m6
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 阿尔法锁定、填充图层、蒙版、剪辑蒙版、绘图辅助都在这一页。
+  lessons: [m6-03, m6-05]
+- id: hb-colors-m6
+  title: Procreate 使用手册：色彩界面（含吸管）
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 「值」面板里的十六进制输入，以及长按调出吸管取色。
+  lessons: [m6-02, m6-05]
+- id: oleander-glow
+  title: How to make anything glow in Procreate + DIY glow brush tutorial
+  url: https://www.oleanderstudios.com/how-to-glow-effect-in-procreate-tutorial/
+  platform: Oleander Studios
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。复制、模糊、改「添加」叠出发光的做法，配图很清楚，和本站光剑的三层思路一致。
+  lessons: [m6-03]
+- id: muzenik-glow
+  title: How to make things GLOW in Procreate
+  url: https://muzenikart.com/blogs/news/how-to-make-things-glow
+  platform: Muzenik
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。多层模糊叠加发光，提醒发光层别超过五层，暗背景上光更明显。
+  lessons: [m6-03]
+- id: creativebloq-glow
+  title: How to create ethereal glowing light effects in Procreate
+  url: https://www.creativebloq.com/art/digital-art/how-to-create-ethereal-glowing-light-effects-in-procreate
+  platform: Creative Bloq
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。插画师讲柔和光效怎么画，可以参考光的颜色和外晕的处理。
+  lessons: [m6-02, m6-03]
+- id: creativebloq-colour-light
+  title: How to use Procreate to master colour and light
+  url: https://www.creativebloq.com/art/digital-art/how-to-make-magical-illustrations-using-procreate
+  platform: Creative Bloq
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。在人物上面叠剪辑蒙版图层，用喷枪画反光和边缘光，正是 6.5 的做法。
+  lessons: [m6-05]
+- id: bili-cos-light-ps
+  title: 【cos后期教程】瞬间提升图片光感！让所有东西都发光发亮吧
+  url: https://www.bilibili.com/video/BV1E4411y731/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 用 PS 演示，但"加光、让光照到人身上"的思路和本模块一样，可以看效果和判断标准。
+  lessons: [m6-02, m6-05]
+- id: bili-cos-lightning-ps
+  title: cos后期如何制作发光特效？闪电特效
+  url: https://www.bilibili.com/video/BV1w7411j7Sg/
+  platform: B站
+  type: 视频
+  paid: false
+  lang: zh
+  why: 用 PS 做角色的雷电技能特效，可以学构图和光效摆放；视频里的素材不用下载，按 6.3 的方法自己画。
+  lessons: [m6-03]
+- id: ugee-cos-fx
+  title: 【COS后期特约教程】特效效果的后期制作
+  url: https://www.ugee.com.cn/article/385.html
+  platform: 友基官网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 用魔法少女射箭的图讲特效后期，箭身发光用的也是「线性减淡（添加）」。PS 操作，看思路。
+  lessons: [m6-03]
+- id: zhihu-symmetry-pattern
+  title: PAD技能6丨procreate如何快速画出对称型图案？
+  url: https://zhuanlan.zhihu.com/p/129961911
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 中文图文讲径向对称画图案，魔法阵和雪花形状都能参考。
+  lessons: [m6-03, m6-04]
+- id: zhihu-diy-brush
+  title: 想要大神的笔刷？不如自己做丨Procreate笔刷教程
+  url: https://zhuanlan.zhihu.com/p/51627184
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 中文图文讲形状、颗粒和"印"的概念，以及把自己画的图导入形状来源。
+  lessons: [m6-04]
+- id: draw21-make-brush
+  title: Learn How to Make a Brush In Procreate
+  url: https://www.21-draw.com/how-to-make-a-brush-in-procreate/
+  platform: 21 Draw
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文。图章笔刷的完整步骤：粘贴形状、两指轻点反转、间距调大、散布和旋转。
+  lessons: [m6-04]
+- id: procreate-edu-snowflake
+  title: Design a unique snowflake（Procreate 官方教学方案）
+  url: https://education-downloads.procreate.art/pdfs/DesignAUniqueSnowflake-ProcreateLessonIdea.pdf
+  platform: Procreate 官方
+  type: 文章
+  paid: false
+  lang: en
+  why: 英文 PDF。官方用对称指引画雪花的教学方案，画雪花形状来源时参考。
+  lessons: [m6-04]

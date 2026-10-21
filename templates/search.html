@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>搜索</h1>
+  <p class="lead">搜课程、问题和资料。比如试试「液化」「头身比」「直方图」。</p>
+</div>
+<form class="search-box" role="search" data-search-form>
+  <label class="sr-only" for="q">搜索关键词</label>
+  <input id="q" name="q" type="search" placeholder="输入关键词" autocomplete="off" data-search-input>
+  <button class="btn btn-primary" type="submit">搜索</button>
+</form>
+<p class="search-count" aria-live="polite" data-search-count></p>
+<ol class="search-results" data-search-results></ol>
+{% endblock %}
+{% block scripts %}<script src="{% if preview %}__SEARCH_INDEX_SRC__{% else %}/search-index.js{% endif %}"></script>{% endblock %}

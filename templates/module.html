@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="crumbs" aria-label="位置"><a href="{{ u('/map/') }}">课程地图</a><span aria-hidden="true">/</span><span>M{{ mod.no }}</span></nav>
+<div class="page-head lv-{{ {'入门':'a','基础':'b','进阶':'c','高阶':'d'}[mod.level] }}">
+  <h1><span class="mod-no">M{{ mod.no }}</span>{{ mod.title }}</h1>
+  <p class="lead">{{ mod.summary }}</p>
+  <ul class="chips"><li class="chip">{{ mod.level }}</li><li class="chip">{{ mod.lessons|length }} 节课</li><li class="chip">约 {{ mod.hours }} 小时</li>{% if mod.note %}<li class="chip">{{ mod.note }}</li>{% endif %}</ul>
+</div>
+<ol class="lesson-list lesson-list-big">
+  {% for l in mod.lessons %}
+  <li>
+    <a class="lesson-row" href="{{ lu(l.id) }}" data-lesson-row="{{ l.id }}">
+      <span class="lr-check" aria-hidden="true"></span>
+      <span class="lr-no">{{ l.no }}</span>
+      <span class="lr-title">{{ l.title }}<small>{{ (l.summary or l.outline)|truncate(70, True, '…') }}</small></span>
+      <span class="lr-time">{{ l.duration }}</span>
+      {% if not l.written %}<span class="pill pill-muted">编写中</span>{% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ol>
+{% if mod.stage %}
+<section class="card card-hw stage" id="stage">
+  <h2>M{{ mod.no }} 阶段作业：{{ mod.stage.title }}</h2>
+  {{ mod.stage.task|md|safe }}
+  <ul class="chips stage-meta">{% if mod.stage.time %}<li class="chip">建议用时 {{ mod.stage.time }}</li>{% endif %}{% for lid in mod.stage.uses or [] %}<li class="chip"><a href="{{ lu(lid) }}">{{ lessons[lid].no }} {{ lessons[lid].title }}</a></li>{% endfor %}</ul>
+  {% if mod.stage.find %}<h3>找图</h3>{{ mod.stage.find|md|safe }}{% endif %}
+  <h3>验收标准</h3>
+  <ul class="ticks">{% for a in mod.stage.acceptance %}<li>{{ a|mdi|safe }}</li>{% endfor %}</ul>
+  {% if mod.stage.deliverables %}<h3>要交的东西</h3><ul>{% for d in mod.stage.deliverables %}<li>{{ d|mdi|safe }}</li>{% endfor %}</ul>{% endif %}
+  <label class="hw-toggle"><input type="checkbox" data-hw="{{ mod.id }}-stage"> 我完成了阶段作业，并且达到了验收标准</label>
+</section>
+{% elif mod.stage_homework %}
+<section class="card card-hw stage" id="stage">
+  <h2>M{{ mod.no }} 阶段作业</h2>
+  <p>{{ mod.stage_homework }}</p>
+  <label class="hw-toggle"><input type="checkbox" data-hw="{{ mod.id }}-stage"> 我完成了阶段作业</label>
+</section>
+{% endif %}
+{% endblock %}

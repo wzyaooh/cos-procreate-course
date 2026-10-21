@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head">
+  <h1>作业中心</h1>
+  <p class="lead">全部 {{ lessons|length }} 个课程作业和各模块的阶段作业。完成并达到验收标准后打勾。</p>
+  <p class="hw-total" data-hw-total></p>
+</div>
+{% for m in modules %}
+<section class="hw-module">
+  <h2><span class="mod-no">M{{ m.no }}</span>{{ m.title }}</h2>
+  <ul class="hw-list">
+    {% for l in m.lessons %}
+    <li class="hw-item">
+      <label class="hw-check"><input type="checkbox" data-hw="{{ l.id }}"><span class="sr-only">完成 {{ l.no }} 的作业</span></label>
+      <div>
+        <h3><a href="{{ lu(l.id) }}#homework">{{ l.no }} {{ l.title }}</a></h3>
+        <div class="hw-task">{{ (l.homework.task if l.homework is mapping else l.homework)|md|safe }}</div>
+        <p class="hw-find"><b>找图：</b>{{ l.find|mdi|safe }}</p>
+      </div>
+    </li>
+    {% endfor %}
+    {% if m.stage or m.stage_homework %}
+    <li class="hw-item hw-stage">
+      <label class="hw-check"><input type="checkbox" data-hw="{{ m.id }}-stage"><span class="sr-only">完成 M{{ m.no }} 阶段作业</span></label>
+      <div><h3><a href="{{ u('/' ~ m.id ~ '/#stage') }}">M{{ m.no }} 阶段作业{% if m.stage %}：{{ m.stage.title }}{% endif %}</a></h3>
+      {% if m.stage %}{{ m.stage.task|md|safe }}<p class="hw-find"><b>验收：</b>{{ m.stage.acceptance|length }} 条标准，点标题查看</p>{% else %}<p>{{ m.stage_homework }}</p>{% endif %}</div>
+    </li>
+    {% endif %}
+  </ul>
+</section>
+{% endfor %}
+<section class="hw-module">
+  <h2>毕业作品</h2>
+  <ul class="hw-list">
+    <li class="hw-item hw-stage">
+      <label class="hw-check"><input type="checkbox" data-hw="graduation"><span class="sr-only">完成毕业作品</span></label>
+      <div><h3><a href="{{ u('/graduation/') }}">三张毕业作品</a></h3><p>精修一张、特效一张、合成一张，按评分表自评。要求和评分标准见<a href="{{ u('/graduation/') }}">毕业作品</a>页。</p></div>
+    </li>
+  </ul>
+</section>
+{% endblock %}

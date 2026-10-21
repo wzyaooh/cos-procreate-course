@@ -1,0 +1,152 @@
+- id: m4-adobe-lrm-light
+  title: Adobe 帮助：在移动版 Lightroom 中调整亮度
+  url: https://helpx.adobe.com/cn/lightroom/mobile/adjust-light-and-color/adjust-light-in-photos.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方中文说明：曝光度、对比度、高光、阴影、白色色阶、黑色色阶各管什么，以及怎么看直方图。
+  lessons:
+  - m4-02
+- id: m4-adobe-lrm-color
+  title: Adobe 帮助：在移动版 Lightroom 中调整颜色
+  url: https://helpx.adobe.com/cn/lightroom/mobile/adjust-light-and-color/adjust-colors.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 白平衡选择器、色温、色调、颜色混合（色相、饱和度、明亮度）和颜色分级的官方中文说明。
+  lessons:
+  - m4-02
+- id: m4-adobe-lrm-curve
+  title: Adobe 帮助：在移动版 Lightroom 中使用曲线调整色调范围
+  url: https://helpx.adobe.com/cn/lightroom/mobile/adjust-light-and-color/adjust-tonal-range-using-curve.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 点曲线和参数曲线的用法，怎么加点、删点，怎么单独调红绿蓝通道。
+  lessons:
+  - m4-02
+- id: m4-adobe-lrm-masking
+  title: Adobe 帮助：移动版 Lightroom 的蒙版工具
+  url: https://helpx.adobe.com/cn/lightroom/mobile/masks-and-selective-adjustments/masking-tools.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 选择主体、画笔、线性渐变、径向渐变、颜色范围、明亮度范围这些局部调整工具的说明。
+  lessons:
+  - m4-02
+- id: m4-adobe-lrm-premium
+  title: Adobe 帮助：升级到付费 Lightroom 订阅
+  url: https://helpx.adobe.com/cn/lightroom/mobile/app-subscriptions-and-account/upgrade-to-paid-subscription.html
+  platform: Adobe 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 官方写明免费版有核心编辑功能，蒙版、镜头模糊、生成式移除等需要高级订阅。
+  lessons:
+  - m4-02
+- id: m4-snapseed-adjust
+  title: Snapseed 帮助：调整图片
+  url: https://support.google.com/snapseed/answer/3111600?hl=zh-Hans
+  platform: Google 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 免费替代方案。亮度、环境（App 里叫「氛围」）、对比度、饱和度、白平衡几个控件的官方说明。
+  lessons:
+  - m4-02
+- id: m4-hb-layer-options
+  title: Procreate 使用手册：图层选项
+  url: https://help.procreate.com/cn/procreate/handbook/layers/layers-options
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 填充图层、阿尔法锁定、向下合并等选项的官方说明。灰度观察层和中性灰图层都要用到「填充图层」。
+  lessons:
+  - m4-01
+  - m4-04
+- id: m4-hb-gestures
+  title: Procreate 使用手册：手势
+  url: https://help.procreate.com/cn/procreate/handbook/interface-gestures/gestures
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 快速捏合适应屏幕、撤销重做、四指全屏等手势的官方说明。
+  lessons:
+  - m4-01
+- id: m4-hb-color-ui
+  title: Procreate 使用手册：色彩界面（含吸管）
+  url: https://help.procreate.com/cn/procreate/handbook/colors/colors-interface
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 长按画布吸色的方法，以及吸当前图层还是吸整张画面的切换。
+  lessons:
+  - m4-03
+  - m4-05
+- id: m4-hb-noise
+  title: Procreate 使用手册：杂色
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-noise
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 云、巨浪、背脊三种杂色和比例、倍频、湍流滑块的说明，补皮肤颗粒时用。
+  lessons:
+  - m4-03
+- id: m4-hb-blur
+  title: Procreate 使用手册：模糊
+  url: https://help.procreate.com/cn/procreate/handbook/adjustments/adjustments-blur
+  platform: Procreate 官方
+  type: 手册
+  paid: false
+  lang: zh
+  why: 高斯模糊的用法。补画的眉毛、眼线和照片清晰度对不上时，轻轻模糊一下。
+  lessons:
+  - m4-05
+- id: m4-uisdc-skin
+  title: 高手的后期课堂！聊聊人像磨皮的基础原理
+  url: https://www.uisdc.com/portrait-dermabrasion-principles
+  platform: 优设网
+  type: 文章
+  paid: false
+  lang: zh
+  why: 用"信号和噪点"讲清楚为什么整片模糊会把质感一起磨掉，理解塑料脸的成因。
+  lessons:
+  - m4-03
+- id: m4-smzdm-pores
+  title: 磨皮踩坑皮肤质感损失七成：修图师不外传的毛孔保留与液化避坑指南
+  url: https://post.smzdm.com/p/awwo3rqm/
+  platform: 什么值得买
+  type: 文章
+  paid: false
+  lang: zh
+  why: 列了磨皮过度的常见表现和保留毛孔的检查方法，可以对照自查。
+  lessons:
+  - m4-03
+- id: m4-sketchy-dodge-burn
+  title: Dodge and Burn in Procreate (iPad)
+  url: https://sketchytech.blogspot.com/2013/06/dodge-and-burn-in-procreate.html
+  platform: 其他网站
+  type: 文章
+  paid: false
+  lang: en
+  why: 少见的专门讲 Procreate 加深减淡的文章。版本较老，界面已变，但用混合模式图层分开加深、减淡的思路一样。
+  lessons:
+  - m4-04
+- id: m4-zhihu-santing
+  title: 三庭五眼怎么画？比例是多少？
+  url: https://zhuanlan.zhihu.com/p/525936136
+  platform: 知乎
+  type: 文章
+  paid: false
+  lang: zh
+  why: 三庭五眼的划分方法和常见的变化版本，修五官前先看懂"标准"是怎么量的。
+  lessons:
+  - m4-05

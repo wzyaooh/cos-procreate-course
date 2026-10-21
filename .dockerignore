@@ -1,0 +1,8 @@
+.git
+.github
+.env
+site
+preview
+docs/images
+*.zip
+__pycache__

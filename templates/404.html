@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-head notfound">
+  <h1>这个页面不存在</h1>
+  <p class="lead">地址可能输错了，或者这节课换了位置。</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="{{ u('/map/') }}">打开课程地图</a>
+    <a class="btn" href="{{ u('/search/') }}">搜索</a>
+  </div>
+</div>
+{% endblock %}
