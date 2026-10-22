@@ -28,7 +28,17 @@
 	@manifest path /manifest.webmanifest
 	header @manifest Content-Type "application/manifest+json; charset=utf-8"
 
-	file_server
+	# 匿名使用统计（可选）：上报和看板转给 stats 服务；没开统计时这两个地址返回 502，不影响网站
+	handle /api/e {
+		reverse_proxy {$STATS_UPSTREAM:stats:8000}
+	}
+	handle /stats* {
+		reverse_proxy {$STATS_UPSTREAM:stats:8000}
+	}
+
+	handle {
+		file_server
+	}
 
 	handle_errors 404 {
 		rewrite * /404.html

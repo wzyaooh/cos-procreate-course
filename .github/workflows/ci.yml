@@ -27,3 +27,7 @@ jobs:
         run: python tools/check_site.py site
       - name: 构建预览版
         run: python tools/build.py --out preview --preview
+      - name: 开启统计时的构建
+        run: STATS_ENABLED=1 SITE_DOMAIN=example.com python tools/build.py --out site-stats && python tools/check_site.py site-stats
+      - name: 统计服务自测
+        run: python stats/selftest.py

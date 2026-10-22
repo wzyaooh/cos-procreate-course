@@ -4,6 +4,8 @@ services:
       context: .
       args:
         SITE_DOMAIN: ${SITE_DOMAIN:-}
+        STATS_ENABLED: ${STATS_ENABLED:-0}
+        STATS_RETENTION_DAYS: ${STATS_RETENTION_DAYS:-2}
     image: zhangyuhan-cos-course:latest
     container_name: zhangyuhan-cos-course
     restart: unless-stopped
@@ -30,6 +32,28 @@ services:
         max-size: "10m"
         max-file: "3"
 
+  # 匿名使用统计（可选）。在 .env 里写 COMPOSE_PROFILES=stats 和 STATS_ENABLED=1 才会启动，说明见 docs/stats.md
+  stats:
+    profiles: ["stats"]
+    build: ./stats
+    image: zhangyuhan-cos-stats:latest
+    container_name: zhangyuhan-cos-stats
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - stats_data:/data      # 统计数据库 stats.db
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=5)"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
 volumes:
   caddy_data:
   caddy_config:
+  stats_data:

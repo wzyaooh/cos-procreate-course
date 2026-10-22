@@ -61,6 +61,25 @@ C2=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 "https://$DOMAIN/m5/04
 C3=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 "http://$DOMAIN/")
 case "$C3" in 301|302|307|308) ok "http 会自动跳转到 https（$C3）";; *) bad "http 返回 $C3，没有跳转到 https" "确认 80 端口对外开放";; esac
 
+# 6. 使用统计（只在 .env 里开启时检查）
+SEN=$(grep -E '^STATS_ENABLED=' .env 2>/dev/null | tail -1 | cut -d= -f2- | tr -d '"'"'"' ')
+case "${SEN:-0}" in 1|true|yes|on)
+  grep -qE '^COMPOSE_PROFILES=.*stats' .env || bad "开了 STATS_ENABLED，但没写 COMPOSE_PROFILES=stats" "在 .env 里加一行 COMPOSE_PROFILES=stats，再 docker compose up -d --build"
+  grep -qE '^STATS_PASSWORD_HASH=pbkdf2:' .env && ok "看板密码已设置（.env 里只有哈希）" || bad "没设置看板密码" "运行 python3 tools/stats_password.py，把输出的两行贴进 .env"
+  SST=$(docker inspect -f '{{.State.Status}} {{if .State.Health}}{{.State.Health.Status}}{{end}}' zhangyuhan-cos-stats 2>/dev/null || echo "missing")
+  case "$SST" in
+    running\ healthy*) ok "统计服务在运行（$SST）";;
+    running\ starting*) ok "统计服务在运行，健康检查还在启动中";;
+    missing) bad "找不到容器 zhangyuhan-cos-stats" "确认 .env 有 COMPOSE_PROFILES=stats，再 docker compose up -d --build";;
+    *) bad "统计服务状态：$SST" "docker compose logs --tail 50 stats 看报错";;
+  esac
+  C4=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 "https://$DOMAIN/stats/login")
+  [ "$C4" = "200" ] && ok "统计看板 https://$DOMAIN/stats/ 能打开" || bad "统计看板返回 ${C4:-无响应}" "docker compose logs --tail 50 stats"
+  C5=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 -X POST -H "Origin: https://$DOMAIN" -H 'Content-Type: text/plain' --data '{}' "https://$DOMAIN/api/e")
+  [ "$C5" = "204" ] && ok "统计数据接口 /api/e 正常（204）" || bad "统计数据接口返回 ${C5:-无响应}" "确认网站容器已重新构建（docker compose up -d --build），Caddy 才会把 /api/e 转给统计服务"
+  curl -s --max-time 15 "https://$DOMAIN/" | grep -q 'track.js' && ok "页面里已加载统计脚本" || bad "页面里没有统计脚本" "STATS_ENABLED=1 要在构建时生效：docker compose up -d --build"
+;; esac
+
 echo
 if [ $FAIL = 0 ]; then echo "全部通过。可以在 iPad 上打开 https://$DOMAIN/ 了。"; else echo "有没通过的项。把上面的全部输出复制发给维护者。"; fi
 exit $FAIL

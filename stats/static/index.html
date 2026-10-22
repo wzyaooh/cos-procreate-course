@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>学习统计 - 张宇涵的cos后期Procreate 自学站</title>
+<link rel="stylesheet" href="/stats/static/dashboard.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot" aria-hidden="true"></span><div><b>学习统计</b><small>张宇涵的cos后期Procreate 自学站</small></div></div>
+    <div class="ranges" role="group" aria-label="时间范围">
+      <button type="button" data-range="1">今天</button><button type="button" data-range="7" class="on">7 天</button><button type="button" data-range="30">30 天</button><button type="button" data-range="90">90 天</button><button type="button" data-range="all">全部</button>
+    </div>
+    <div class="top-act">
+      <button type="button" class="btn" data-refresh>刷新</button>
+      <form method="post" action="/stats/logout"><button type="submit" class="btn ghost">退出</button></form>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button type="button" role="tab" data-tab="overview" class="on">概览</button>
+    <button type="button" role="tab" data-tab="lessons">课程</button>
+    <button type="button" role="tab" data-tab="features">功能和搜索</button>
+    <button type="button" role="tab" data-tab="devices">设备</button>
+  </nav>
+</header>
+<main class="wrap">
+  <p class="err" data-err hidden></p>
+
+  <section data-panel="overview">
+    <div class="cards" data-cards></div>
+    <div class="grid2">
+      <div class="box wide"><h2>每天的设备数和学习时长</h2><div class="chart tall"><canvas id="c-trend"></canvas></div></div>
+      <div class="box"><h2>设备类型</h2><div class="chart"><canvas id="c-dtype"></canvas></div></div>
+      <div class="box"><h2>浏览器</h2><div class="chart"><canvas id="c-browser"></canvas></div></div>
+    </div>
+    <div class="box"><h2>看得最久的页面</h2><div data-top-pages></div></div>
+    <p class="note" data-ov-note></p>
+  </section>
+
+  <section data-panel="lessons" hidden>
+    <div class="grid2">
+      <div class="box"><h2>学到哪一模块了</h2><p class="sub" data-prog-sub></p><div class="chart"><canvas id="c-progress"></canvas></div></div>
+      <div class="box"><h2>每天学完的课</h2><p class="sub">点了「标记本课已完成」的次数</p><div class="chart"><canvas id="c-done"></canvas></div></div>
+    </div>
+    <div class="box"><h2>每节课</h2><p class="sub">点一行，看大家读到这节课的第几步。「设备」在多天范围里是估算值。<span data-lesson-sum></span></p>
+      <label class="chk"><input type="checkbox" data-only-visited checked> 只看有人打开过的课</label><div data-lesson-table></div></div>
+    <div class="box"><h2>其他页面</h2><div data-other-table></div></div>
+  </section>
+
+  <section data-panel="features" hidden>
+    <div class="box"><h2>功能使用</h2><div class="chart tall"><canvas id="c-features"></canvas></div></div>
+    <div class="grid2">
+      <div class="box"><h2>搜索词</h2><label class="chk"><input type="checkbox" data-zero-only> 只看没有结果的</label><div data-search-table></div></div>
+      <div class="box"><h2>点开的外部资料</h2><div data-link-table></div></div>
+    </div>
+  </section>
+
+  <section data-panel="devices" hidden>
+    <div class="box">
+      <h2>设备</h2>
+      <p class="sub" data-dev-sub></p>
+      <div class="filters"><label>类型 <select data-dev-type><option value="">全部</option></select></label><label><input type="search" data-dev-q placeholder="搜设备编号或页面"></label></div>
+      <div data-dev-table></div>
+    </div>
+  </section>
+</main>
+
+<aside class="drawer" data-drawer hidden>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="详情">
+    <div class="drawer-head"><b data-drawer-title>详情</b><button type="button" class="btn small" data-drawer-close>关闭</button></div>
+    <div data-drawer-body></div>
+  </div>
+</aside>
+
+<script src="/stats/static/vendor/chart.umd.min.js"></script>
+<script src="/stats/static/dashboard.js"></script>
+</body>
+</html>

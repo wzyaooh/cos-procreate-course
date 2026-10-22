@@ -17,6 +17,9 @@ CONTENT = ROOT / "content"
 STATIC = ROOT / "static"
 SITE_NAME = "张宇涵的cos后期Procreate 自学站"
 REPO_URL = "https://github.com/wzyaooh/cos-procreate-course"
+# 匿名使用统计：设成 1 才在页面里加载 static/js/track.js（需要同时运行 stats 服务，见 docs/stats.md）
+STATS_ENABLED = os.environ.get("STATS_ENABLED", "").strip().lower() in ("1", "true", "yes", "on")
+STATS_RETENTION_DAYS = int(os.environ.get("STATS_RETENTION_DAYS", "2") or 2)  # 写进隐私说明，要和 stats 服务的设置一致
 # 正式网址（分享卡片、sitemap 用）。Docker 构建时从 .env 的 SITE_DOMAIN 传进来；不设就不生成这两项
 SITE_DOMAIN = os.environ.get("SITE_DOMAIN", "").strip().strip("/")
 SITE_URL = "" if (not SITE_DOMAIN or SITE_DOMAIN.startswith(":")) else "https://" + SITE_DOMAIN.replace("https://", "").replace("http://", "")
@@ -214,8 +217,9 @@ class Site:
         self.search = []
         self.css = (STATIC / "css" / "site.css").read_text(encoding="utf-8")
         self.js = (STATIC / "js" / "site.js").read_text(encoding="utf-8")
+        self.track_js = (STATIC / "js" / "track.js").read_text(encoding="utf-8")
         # 静态文件加版本号：内容变了地址就变，浏览器缓存不会拿到旧样式
-        self.ver = hashlib.md5((self.css + self.js).encode()).hexdigest()[:8]
+        self.ver = hashlib.md5((self.css + self.js + self.track_js).encode()).hexdigest()[:8]
 
     # 地址：正式版用 /m0/01/，预览版用相对路径 + index.html
     def url(self, target, here):
@@ -275,7 +279,8 @@ class Site:
         depth = len(parts) - (1 if here.endswith(".html") else 0)
         ctx.update(site_name=SITE_NAME, title=title, here=here, preview=self.preview, depth=depth,
                    u=lambda t: self.url(t, here), lu=lambda lid: self.url(self.lesson_url(lid), here),
-                   modules=self.modules, lessons=self.lessons, ver=self.ver, repo_url=REPO_URL, site_url=("" if self.preview else SITE_URL),
+                   modules=self.modules, lessons=self.lessons, ver=self.ver, repo_url=REPO_URL,
+                   stats_enabled=(STATS_ENABLED and not self.preview), stats_retention=STATS_RETENTION_DAYS, site_url=("" if self.preview else SITE_URL),
                    asset=lambda rel: self.asset(rel, here), inline_css=self.css if self.preview else None,
                    inline_js=self.js if self.preview else None)
         html_out = self.resolve_links(tpl.render(**ctx), here)
@@ -303,9 +308,22 @@ class Site:
             urls = "".join(f"<url><loc>{SITE_URL}{p}</loc></url>" for p in pages)
             (self.out / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>'
                                                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls + "</urlset>", encoding="utf-8")
-            (self.out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n", encoding="utf-8")
+            (self.out / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /stats/\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\n", encoding="utf-8")
         else:
-            (self.out / "robots.txt").write_text("User-agent: *\nAllow: /\n", encoding="utf-8")
+            (self.out / "robots.txt").write_text("User-agent: *\nAllow: /\nDisallow: /stats/\nDisallow: /api/\n", encoding="utf-8")
+        # 统计看板用：页面标题、模块和课程列表（都是公开信息）
+        titles = {}
+        for f in self.out.rglob("index.html"):
+            m = re.search(r"<title>(.*?)</title>", f.read_text(encoding="utf-8"), re.S)
+            p = "/" + str(f.relative_to(self.out).parent).replace("\\", "/").strip(".")
+            p = ("/" + p.strip("/") + "/").replace("//", "/")
+            titles[p] = html.unescape(m.group(1)).replace(" - " + SITE_NAME, "").replace(SITE_NAME, "首页").strip() if m else p
+        site_map = {"pages": titles, "modules": [
+            {"id": m["id"], "no": m["no"], "title": m["title"],
+             "lessons": [{"id": l["id"], "no": l["no"], "title": l["title"], "path": self.lesson_url(l["id"]),
+                          "sections": l.get("_sections", [])} for l in m["lessons"]]}
+            for m in self.modules]}
+        (self.out / "site-map.json").write_text(json.dumps(site_map, ensure_ascii=False), encoding="utf-8")
 
     def neighbors(self, lid):
         i = self.order.index(lid)
@@ -349,6 +367,7 @@ class Site:
             prereq = [self.lessons[p] for p in les.get("prerequisites", [])]
             related = [p for p in self.problems if lid in p.get("lessons", [])]
             prev, nxt = self.neighbors(lid)
+            les["_sections"] = re.findall(r'<h[23][^>]*\bid="([^"]+)"', body_html)
             self.render("lesson.html", here, f"{les['no']} {les['title']}", les=les, body=body_html, toc=toc,
                         res=res, refs=refs, prereq=prereq, related=related, prev=prev, nxt=nxt)
             title = f"{les['no']} {les['title']}"

@@ -64,6 +64,8 @@ bash tools/deploy_check.sh
 
 域名解析、1Panel / nginx 反代配置、常见问题见 **[docs/deploy.md](docs/deploy.md)**。
 
+可选：开启自建的匿名使用统计和看板（每台设备看了哪些页面、多久、用了哪些功能），见 **[docs/stats.md](docs/stats.md)**。默认关闭。
+
 ## 参与改进
 
 课程按 Procreate 官方中文手册编写，但软件会更新，难免有对不上的地方。欢迎：

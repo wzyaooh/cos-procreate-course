@@ -19,10 +19,12 @@ tools/check_site.py   检查构建结果里的站内链接、锚点、搜索索�
 tools/lint.py         内容检查：用词、步骤卡、数字写法
 tools/make_icons.py   生成图标和分享卡片（手动运行，生成的 PNG 随项目提交）
 tools/deploy_check.sh 部署后在服务器上运行的自检
+tools/stats_password.py 生成统计看板的密码哈希
 tools/diagrams/       生成示意图的脚本（kit.py 是公共组件，其余按模块分文件）
 docker/               Caddy 配置、nginx 反代配置参考
 deploy/1panel/        1Panel 环境下自动申请证书的脚本
-docs/                 部署说明、写课说明
+stats/                匿名使用统计服务和看板（可选，见 docs/stats.md）
+docs/                 部署说明、写课说明、统计说明
 Dockerfile
 docker-compose.yml
 .env.example          域名和运行模式

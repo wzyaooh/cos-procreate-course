@@ -16,6 +16,12 @@
   }
   var state = load();
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  /* 给统计脚本（track.js）发通知；没开统计时没人监听，不影响任何功能 */
+  function emit(name, detail) {
+    /* 统计脚本可能比这里晚加载（比如打开带 ?q= 的搜索页），先留一份最后的通知 */
+    try { (window.__zyhEmitted = window.__zyhEmitted || {})[name] = detail; } catch (e) {}
+    try { document.dispatchEvent(new CustomEvent("zyh:" + name, { detail: detail })); } catch (e) {}
+  }
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
 
   /* 课程列表里的完成状态 */
@@ -230,9 +236,11 @@
         list.appendChild(li);
       });
       try { history.replaceState(null, "", "?q=" + encodeURIComponent(q)); } catch (e) {}
+      emit("search", { q: q, hits: scored.length, submit: !!run.submit });
+      run.submit = false;
     }
     var timer;
-    form.addEventListener("submit", function (e) { e.preventDefault(); run(); });
+    form.addEventListener("submit", function (e) { e.preventDefault(); run.submit = true; run(); });
     input.addEventListener("input", function () { clearTimeout(timer); timer = setTimeout(run, 150); });
     var m = location.search.match(/[?&]q=([^&]+)/);
     if (m) { input.value = decodeURIComponent(m[1].replace(/\+/g, " ")); run(); }

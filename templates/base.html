@@ -49,7 +49,7 @@
   <div class="footer-inner">
     <p><b>{{ site_name }}</b></p>
     <p>学习进度只保存在这台设备的浏览器里。换设备前，去<a href="{{ u('/about/#backup') }}">使用说明</a>导出备份。</p>
-    <p><a href="{{ u('/about/') }}">使用说明</a>　<a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>　<a href="{{ u('/graduation/') }}">毕业作品</a></p>
+    <p><a href="{{ u('/about/') }}">使用说明</a>　<a href="{{ u('/ps-procreate/') }}">PS 和 Procreate 对照表</a>　<a href="{{ u('/graduation/') }}">毕业作品</a>　<a href="{{ u('/about/#privacy') }}">隐私说明</a></p>
     <p>课程内容和示意图采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a> 许可，代码采用 MIT 许可。<a href="{{ repo_url }}" target="_blank" rel="noopener">源代码和问题反馈：GitHub</a></p>
     <p>本站是非官方学习资料，与 Procreate、Adobe 等公司无关；示意图不是软件截图。课程里引用的视频和文章版权归原作者所有，本站只提供链接。</p>
   </div>
@@ -75,5 +75,6 @@
 {% endif %}
 {% block scripts %}{% endblock %}
 {% if inline_js %}<script>{{ inline_js|safe }}</script>{% else %}<script src="/static/js/site.js?v={{ ver }}" defer></script>{% endif %}
+{% if stats_enabled %}<script src="/static/js/track.js?v={{ ver }}" defer></script>{% endif %}
 </body>
 </html>
